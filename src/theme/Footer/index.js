@@ -52,7 +52,7 @@ const footerLinks = {
   copyright: `Copyright © ${new Date().getFullYear()} Bryan Wendt. Built with Docusaurus.`,
 };
 
-function FooterWrapper(props) {
+function Footer(props) {
   return (
     <div className={clsx(styles.footerWrapper)}>
       <Footer {...props} {...footerLinks} />
