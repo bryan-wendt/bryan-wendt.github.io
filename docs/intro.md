@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# About the Red Team Wiki
+# Physical Red Team Wiki
 
 This wiki is designed to combine knowledge of various Physical Red Team knowledge from across the internet.
 
