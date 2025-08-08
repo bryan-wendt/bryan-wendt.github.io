@@ -6,7 +6,7 @@ const FeatureList = [
   {
     title: 'Physical Red Team Wiki',
     titleLink: '/docs/intro',
-    imageLink: '/static/img/red_team.png',
+    imageLink: '/img/red_team.png',
     description: (
       <>
         Physical Red Team Wiki that covers a large 
@@ -17,7 +17,7 @@ const FeatureList = [
   {
     title: 'Blog',
     titleLink: '/blog',
-    imageLink: '/static/img/blog_new.png',
+    imageLink: '/img/blog_new.png',
     description: (
       <>
         Blog covers a wide range of topics regarding security, certifications,
