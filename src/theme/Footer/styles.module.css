@@ -1,9 +1,6 @@
 .footerWrapper {
   /* This ensures the entire footer container is centered */
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* This targets the container for the link columns */
