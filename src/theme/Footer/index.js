@@ -3,8 +3,9 @@ import Footer from '@theme-original/Footer';
 
 export default function FooterWrapper(props) {
   return (
-    <>
-      <Footer {...props} />
-    </>
+    <div className={clsx('col col--6')}>
+      <div className="text--center"></div>
+        <Footer {...props} />
+    </div>
   );
 }
