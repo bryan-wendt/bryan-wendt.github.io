@@ -5,7 +5,7 @@ authors: bw
 tags: [learning, linux-strength-training, tryhackme, walkthrough]
 ---
 
-This is a walkthrough for [TryHackMe][thm] room: [Linux Strength Training][linux-room].
+This is a walkthrough for [TryHackMe](https://tryhackme.com) room: [Linux Strength Training](https://tryhackme.com/r/room/linuxstrengthtraining).
 <!-- truncate -->
 
 I will do my best to not spoil some of the answers, however that may be difficult as a lot of the answers are commands needed to progress. With that, deploy your machine and let’s get started!

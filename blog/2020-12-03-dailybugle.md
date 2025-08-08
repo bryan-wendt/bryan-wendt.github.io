@@ -5,7 +5,7 @@ authors: bw
 tags: [learning, daily-bugle, tryhackme, walkthrough]
 ---
 
-This is a walkthrough for the [TryHackMe][thm] room: [Daily Bugle][daily-room]. Let’s get started!
+This is a walkthrough for the [TryHackMe](https://tryhackme.com) room: [Daily Bugle](https://tryhackme.com/r/room/dailybugle). Let’s get started!
 <!-- truncate -->
 
 # Deploy

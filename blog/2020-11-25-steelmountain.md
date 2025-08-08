@@ -5,7 +5,7 @@ authors: bw
 tags: [learning, steelmountain, tryhackme, walkthrough]
 ---
 
-This is a [TryHackMe][tryhackme] walkthrough for the room: [Steel Mountain][sm]. Deploy the machine and let’s get started!
+This is a [TryHackMe](https://tryhackme.com) walkthrough for the room: [Steel Mountain](https://tryhackme.com/why-subscribe?roomCode=steelmountain). Deploy the machine and let’s get started!
 <!-- truncate -->
 
 # Enumeration

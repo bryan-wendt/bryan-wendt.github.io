@@ -5,7 +5,7 @@ authors: bw
 tags: [learning, picklerick, tryhackme, walkthrough]
 ---
 
-Since this is my first [TryHackMe (THM)][thm] write-up, I figured it would be good to start with a fun one! This is the [Pickle Rick][picklerick] room.
+Since this is my first [TryHackMe (THM)](https://tryhackme.com) write-up, I figured it would be good to start with a fun one! This is the [Pickle Rick](https://tryhackme.com/r/room/picklerick) room.
 <!-- truncate -->
 
 # Enumeration
