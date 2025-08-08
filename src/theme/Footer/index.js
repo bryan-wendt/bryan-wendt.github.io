@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '@theme-original/Footer';
+import OriginalFooter from '@theme-original/Footer';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
@@ -55,7 +55,7 @@ const footerLinks = {
 export default function Footer(props) {
   return (
     <div className={clsx(styles.footerWrapper)}>
-      <Footer {...props} {...footerLinks} />
+      <OriginalFooter {...props} {...footerLinks} />
     </div>
   );
 }
