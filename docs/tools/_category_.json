@@ -1,6 +1,6 @@
 {
   "label": "Tools",
-  "position": 2,
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Tools used for physical red teaming engagements."
