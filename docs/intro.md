@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# About the Wiki
+# About the Red Team WikiPPLpl
 
 This wiki is designed to combine knowledge of various Physical Red Team knowledge from across the internet.
 
