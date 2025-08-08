@@ -29,7 +29,7 @@ const FeatureList = [
 
 function Feature({title, description, imageLink, titleLink}) {
   return (
-    <div className={clsx('col col--2')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
         <img src={imageLink} />
       </div>
