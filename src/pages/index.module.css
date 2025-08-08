@@ -8,7 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #1a202c; /* bg-gray-900 */
+  background-color: #030405; /* bg-gray-900 */
   color: #fff; /* text-white */
 }
 
@@ -65,7 +65,7 @@
 .features {
   padding: 4rem 0;
   background-color: #f7fafc; /* bg-gray-100 */
-  color: #2d3748; /* text-gray-800 */
+  color: #21252c; /* text-gray-800 */
 }
 
 .feature {
@@ -146,7 +146,7 @@
 }
 
 .postDescription {
-  color: #a0aec0; /* text-gray-400 */
+  color: #000000; /* text-gray-400 */
 }
 
 /* Responsive adjustments */
