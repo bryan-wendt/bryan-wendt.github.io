@@ -1,6 +1,6 @@
 {
   "label": "Obstacles",
-  "position": 3,
+  "position": 2,
   "link": {
     "type": "generated-index",
     "description": "Obstacles you may run into during physical red team engagements."
