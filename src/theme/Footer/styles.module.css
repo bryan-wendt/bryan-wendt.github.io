@@ -7,7 +7,6 @@
 .footer__links {
   display: flex;
   justify-content: center;
-  gap: 2rem; /* Adds space between the columns */
 }
 
 /* This targets the copyright text at the bottom of the footer */
