@@ -9,7 +9,7 @@ const FeatureList = [
     imageLink: '/img/red_team.png',
     description: (
       <>
-        Physical Red Team Wiki that covers a large 
+        Physical Red Team Wiki that covers a large
         number of topics pertaining to physical security.
       </>
     ),
@@ -27,11 +27,11 @@ const FeatureList = [
   }
 ];
 
-function Feature({title, description, imageLink, titleLink}) {
+function Feature({ title, description, imageLink, titleLink }) {
   return (
     <div className={clsx('col col--6')}>
       <div className="text--center">
-        <img src={imageLink} />
+        <img src={imageLink} className={styles.featureImage} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3"><a href={titleLink}>{title}</a></Heading>
@@ -44,8 +44,7 @@ function Feature({title, description, imageLink, titleLink}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container text--center">
-      <Heading as="h1">Site is a work in progress</Heading>
+      <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
