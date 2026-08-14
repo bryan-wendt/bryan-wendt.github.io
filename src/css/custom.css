@@ -4,31 +4,125 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Modern Cyber/Security Theme Palette */
 :root {
-  --ifm-color-primary: #2e7185;
-  --ifm-color-primary-dark: #245969;
-  --ifm-color-primary-darker: #1e4b58;
-  --ifm-color-primary-darkest: #183c46;
-  --ifm-color-primary-light: #347f96;
-  --ifm-color-primary-lighter: #3a8fa8;
-  --ifm-color-primary-lightest: #419fbb;
+  --ifm-color-primary: #0284c7;
+  --ifm-color-primary-dark: #0369a1;
+  --ifm-color-primary-darker: #075985;
+  --ifm-color-primary-darkest: #0c4a6e;
+  --ifm-color-primary-light: #38bdf8;
+  --ifm-color-primary-lighter: #7dd3fc;
+  --ifm-color-primary-lightest: #bae6fd;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --bw-accent-teal: #10b981;
+  --bw-accent-blue: #3b82f6;
+  --bw-accent-indigo: #6366f1;
+  --bw-card-bg: rgba(255, 255, 255, 0.85);
+  --bw-card-border: rgba(0, 0, 0, 0.08);
+  --bw-card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #2c7d96;
-  --ifm-color-primary-dark: #2a758b;
-  --ifm-color-primary-darker: #276b80;
-  --ifm-color-primary-darkest: #236072;
-  --ifm-color-primary-light: #2d88a3;
-  --ifm-color-primary-lighter: #2e94b3;
-  --ifm-color-primary-lightest: #2c9ec0;
+  --ifm-color-primary: #38bdf8;
+  --ifm-color-primary-dark: #0ea5e9;
+  --ifm-color-primary-darker: #0284c7;
+  --ifm-color-primary-darkest: #0369a1;
+  --ifm-color-primary-light: #7dd3fc;
+  --ifm-color-primary-lighter: #bae6fd;
+  --ifm-color-primary-lightest: #e0f2fe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #0b0f17;
+  --ifm-background-surface-color: #111827;
+  --bw-card-bg: rgba(17, 24, 39, 0.75);
+  --bw-card-border: rgba(255, 255, 255, 0.08);
+  --bw-card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* Global Centered Footer */
+.footer {
+  padding: 3.5rem 1rem 2.5rem;
+  background-color: #080c14;
+}
+
+.footer .container,
+.footer .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer .row.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  gap: 3rem;
+}
+
+.footer__col {
+  flex: 1 1 160px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.footer__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: var(--ifm-color-primary-light);
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 0.4rem;
+}
+
+.footer__item {
+  padding: 0.15rem 0;
+  text-align: center;
+}
+
+.footer__link-item {
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+  transform: translateY(-1px);
 }
 
 .footer__bottom {
   text-align: center;
+  width: 100%;
+  max-width: 760px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer .row.footer__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 }

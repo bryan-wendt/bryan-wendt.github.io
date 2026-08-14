@@ -1,24 +1,3 @@
 .footerWrapper {
-  /* This ensures the entire footer container is centered */
   width: 100%;
-}
-
-/* This targets the container for the link columns */
-.footer__links {
-  display: flex;
-  justify-content: center;
-}
-
-/* This targets the copyright text at the bottom of the footer */
-.footer__bottom {
-  text-align: center;
-}
-
-/* On smaller screens, stack the columns vertically */
-@media (max-width: 768px) {
-  .footer__links {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
 }
