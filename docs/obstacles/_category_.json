@@ -1,8 +1,8 @@
 {
   "label": "Obstacles",
-  "position": 2,
+  "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Obstacles you may run into during physical red team engagements."
+    "description": "Architectural barriers, door assemblies, egress hardware, and electronic access controls encountered during physical engagements."
   }
 }

@@ -1,0 +1,8 @@
+{
+  "label": "Identification",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Guides and workflows for identifying lock mechanisms, keyway profiles, and physical security hardware in the field."
+  }
+}

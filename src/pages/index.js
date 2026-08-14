@@ -110,15 +110,15 @@ function PillarsSection() {
             <ul className={styles.pillarList}>
               <li className={styles.pillarListItem}>
                 <span className={styles.itemBullet} />
+                <span><strong>Identification & Recon:</strong> Recognizing cylinders, keyways, and hardware profiles.</span>
+              </li>
+              <li className={styles.pillarListItem}>
+                <span className={styles.itemBullet} />
                 <span><strong>Bypass Techniques:</strong> Latch slips, under-door tools, REX sensor triggers, and shimming methods.</span>
               </li>
               <li className={styles.pillarListItem}>
                 <span className={styles.itemBullet} />
-                <span><strong>Obstacles & Barriers:</strong> Turnstiles, fences, crash bars, electronic strikes, and perimeter controls.</span>
-              </li>
-              <li className={styles.pillarListItem}>
-                <span className={styles.itemBullet} />
-                <span><strong>Tools & Equipment:</strong> Lock picks, bypass keys, decoders, and field-tested bypass gear.</span>
+                <span><strong>Obstacles & Hardware:</strong> Turnstiles, fences, crash bars, magnetic locks, and strikes.</span>
               </li>
             </ul>
           </div>
@@ -235,6 +235,12 @@ function AboutSection() {
 function QuickTopicsSection() {
   const topics = [
     {
+      icon: <KeyIcon size={22} />,
+      title: 'Field Identification',
+      desc: 'Workflows to identify cylinder housings, keyways, and mechanisms.',
+      to: '/docs/category/identification',
+    },
+    {
       icon: <DoorIcon size={22} />,
       title: 'Obstacles & Defenses',
       desc: 'Analyze perimeter barriers, turnstiles, crash bars, and door hardware.',
@@ -247,23 +253,17 @@ function QuickTopicsSection() {
       to: '/docs/category/tools',
     },
     {
-      icon: <KeyIcon size={22} />,
+      icon: <FileTextIcon size={22} />,
       title: 'Bypass Techniques',
       desc: 'Methodologies for shimming, latch manipulation, and sensor evasion.',
       to: '/docs/category/techniques',
-    },
-    {
-      icon: <FileTextIcon size={22} />,
-      title: 'Recent Writeups',
-      desc: 'Read the latest blog articles, certifications, and project updates.',
-      to: '/blog',
     },
   ];
 
   return (
     <section className={styles.quickSection}>
       <div className={styles.sectionHeader}>
-        <span className={styles.sectionTag}>Quick Navigation</span>
+        <span className={styles.sectionTag}>Wiki Categories</span>
         <Heading as="h2" className={styles.sectionTitle}>
           Jump Right In
         </Heading>
@@ -282,6 +282,31 @@ function QuickTopicsSection() {
   );
 }
 
+function DisclaimerSection() {
+  return (
+    <section className={styles.disclaimerSection}>
+      <div className={styles.disclaimerCard}>
+        <div className={styles.disclaimerHeader}>
+          <span className={styles.disclaimerBadge}>Legal Notice</span>
+          <Heading as="h3" className={styles.disclaimerTitle}>
+            Disclaimer & Authorized Use Policy
+          </Heading>
+        </div>
+        <p className={styles.disclaimerText}>
+          All information, research, and technical material published on this website and wiki are strictly intended 
+          for authorized physical security assessments, academic research, and defensive educational purposes.
+        </p>
+        <p className={styles.disclaimerText}>
+          Attempting to bypass, tamper with, or manipulate locks, security mechanisms, or physical access control systems 
+          without prior, explicit, and written authorization from the verified property or system owner is illegal and 
+          punishable under applicable local, state, and federal laws. The author assumes no responsibility or liability for 
+          any misuse, damage, or unlawful actions conducted with the information provided on this platform.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -293,6 +318,7 @@ export default function Home() {
         <PillarsSection />
         <AboutSection />
         <QuickTopicsSection />
+        <DisclaimerSection />
       </main>
     </Layout>
   );

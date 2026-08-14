@@ -14,10 +14,11 @@ Physical security knowledge is often decentralized—scattered across individual
 
 The goal of this wiki is to consolidate practical, structured research into an easily navigable reference covering:
 
-- Mechanical and electronic lock mechanisms.
-- Practical bypass techniques and attack vectors.
-- Common perimeter barriers, architectural obstacles, and door hardware.
-- Assessment methodology, tooling, and countermeasures.
+- **Field Identification:** How to recognize cylinders, keyways, and hardware in the field.
+- **Lock Mechanisms:** Internal pin, wafer, tubular, and electronic mechanisms.
+- **Obstacles & Defenses:** Perimeter barriers, doors, frames, and electronic access controls.
+- **Bypass Techniques:** Practical bypass vectors, manipulation, and sensor triggers.
+- **Tool Profiles:** Specs and applications for picks, tensioners, and bypass gear.
 
 ---
 
@@ -27,10 +28,12 @@ Quickly explore the main categories of the wiki:
 
 | Section | Description | Quick Link |
 | :--- | :--- | :--- |
-| **Obstacles & Defenses** | Perimeter barriers, turnstiles, crash bars, magnetic locks, electronic strikes, and door hardware. | [Explore Obstacles](/docs/category/obstacles) |
-| **Tools & Equipment** | Lock picks, tensioners, bypass keys, decoders, under-door tools, and assessment gear. | [Explore Tools](/docs/category/tools) |
-| **Bypass Techniques** | Latch slipping, under-door manipulation, REX sensor triggers, shimming, and wafer decoding. | [Explore Techniques](/docs/category/techniques) |
-| **Resources** | Reference materials, conference talks, reading lists, and external security links. | [Explore Resources](/docs/category/resources) |
+| **Identification** | Field identification workflows, cylinder housings, and keyway profiles. | [Explore Identification](/docs/category/identification) |
+| **Mechanisms** | Pin tumbler, wafer, tubular, and electronic locking systems. | [Explore Mechanisms](/docs/category/mechanisms) |
+| **Obstacles & Defenses** | Doors, frames, crash bars, electronic strikes, and magnetic locks. | [Explore Obstacles](/docs/category/obstacles) |
+| **Bypass Techniques** | Single pin picking, raking, latch slipping, UDT, and REX evasion. | [Explore Techniques](/docs/category/techniques) |
+| **Tools & Equipment** | Lock picks, tension tools, bypass knives, and specialty equipment. | [Explore Tools](/docs/category/tools) |
+| **Resources & Glossary** | Terminology definitions, standards, books, and conference presentations. | [Explore Resources](/docs/category/resources) |
 
 ---
 

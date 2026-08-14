@@ -1,0 +1,8 @@
+{
+  "label": "Mechanisms",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "In-depth breakdowns of lock mechanisms, internal components, operational principles, and vulnerabilities."
+  }
+}
