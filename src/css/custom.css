@@ -126,3 +126,59 @@
     gap: 2rem;
   }
 }
+
+/* ==========================================================================
+   Blog Styling Refinements
+   ========================================================================== */
+
+/* 1. Scale down overly large blog post titles */
+article header h1[class*='title_'],
+article header h2[class*='title_'],
+.blog-list-page article h2,
+.blog-post-page article h1,
+.blog-tags-posts-page article h2 {
+  font-size: 1.65rem;
+  line-height: 1.35;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+.blog-list-page article h2 a,
+.blog-tags-posts-page article h2 a {
+  color: var(--ifm-color-primary-light);
+  transition: color 0.2s ease;
+}
+
+[data-theme='light'] .blog-list-page article h2 a,
+[data-theme='light'] .blog-tags-posts-page article h2 a {
+  color: #0369a1;
+}
+
+.blog-list-page article h2 a:hover,
+.blog-tags-posts-page article h2 a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+/* 2. Hide redundant author blocks across blog list & post cards */
+.blog-list-page .avatar,
+.blog-post-page .avatar,
+.blog-tags-posts-page .avatar,
+article [class*='author'] {
+  display: none !important;
+}
+
+/* 3. Refine spacing between blog articles */
+.blog-list-page article,
+.blog-tags-posts-page article {
+  margin-bottom: 3.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--bw-card-border);
+}
+
+.blog-list-page article:last-of-type,
+.blog-tags-posts-page article:last-of-type {
+  border-bottom: none;
+}
+
