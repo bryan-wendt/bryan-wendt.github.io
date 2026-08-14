@@ -6,6 +6,12 @@ sidebar_position: 1
 
 Welcome to the **Physical Red Team Wiki**, a centralized, community-oriented knowledge repository focused on physical penetration testing, mechanical bypass techniques, access control hardware, and security assessments.
 
+:::caution Disclaimer & Authorized Use Policy
+All information, research, and technical material published on this website and wiki are strictly intended for authorized physical security assessments, academic research, and defensive educational purposes.
+
+Attempting to bypass, tamper with, or manipulate locks, security mechanisms, or physical access control systems without prior, explicit, and written authorization from the verified property or system owner is illegal and punishable under applicable local, state, and federal laws. The author assumes no responsibility or liability for any misuse, damage, or unlawful actions conducted with the information provided on this platform.
+:::
+
 ---
 
 ## Purpose
