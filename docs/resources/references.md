@@ -58,6 +58,8 @@ Curated collection of foundational literature, industry standards bodies, commun
 
 ## Equipment & Tooling Manufacturers
 
+- [Red Team Tools](https://redteamtools.com/)  
+  Specialized physical penetration testing hardware, under-door tools (UDT), latch slips, crash bar wires, decoder cards, and covert entry gear.
 - [Sparrows Lock Picks](https://www.sparrowslockpicks.com/)  
   Professional lock pick sets, flat TOK tension bars, bump keys, and bypass tools (shove knives, Halligan tools).
 - [Peterson International](https://www.peterson-international.com/)  
