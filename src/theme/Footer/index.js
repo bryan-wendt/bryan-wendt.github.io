@@ -16,10 +16,6 @@ const footerLinks = {
           label: 'Physical Red Team Wiki',
           href: '/docs/intro',
         },
-        {
-          label: 'Twitter',
-          href: 'https://twitter.com/docusaurus',
-        },
       ],
     },
     {
