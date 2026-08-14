@@ -182,3 +182,79 @@ article [class*='author'] {
   border-bottom: none;
 }
 
+/* ==========================================================================
+   Documentation & Wiki Styling Refinements
+   ========================================================================== */
+
+/* Doc Sidebar Styling */
+.theme-doc-sidebar-menu {
+  font-size: 0.92rem;
+}
+
+.theme-doc-sidebar-item-link .menu__link--active {
+  background: rgba(14, 165, 233, 0.12);
+  border-left: 3px solid var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Doc Page Content & Tables */
+.theme-doc-markdown h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.theme-doc-markdown h2 {
+  font-size: 1.55rem;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--bw-card-border);
+  padding-bottom: 0.4rem;
+}
+
+.theme-doc-markdown h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.theme-doc-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.theme-doc-markdown th {
+  background: rgba(14, 165, 233, 0.08);
+  font-weight: 700;
+}
+
+/* Pagination next/prev buttons */
+.pagination-nav__link {
+  border-radius: 12px;
+  border: 1px solid var(--bw-card-border);
+  background: var(--bw-card-bg);
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -6px rgba(14, 165, 233, 0.15);
+}
+
+/* Breadcrumbs */
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--ifm-color-primary-light);
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
+}
+
+
