@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg { fill: #1e293b; stroke: #334155; stroke-width: 1.5; rx: 10; }
+      .header-text { fill: #38bdf8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .body-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; text-anchor: middle; }
+      .label-text { fill: #f59e0b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 600; text-anchor: middle; }
+      .tool-body { fill: #475569; stroke: #94a3b8; stroke-width: 1.5; }
+      .accent { stroke: #38bdf8; stroke-width: 2; fill: none; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="420" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Specialized Bypass Tool Geometry &amp; Functional Points</text>
+  <text x="30" y="58" class="subtitle">Hardware bypass profiles for non-destructive latch, handle, and shackle manipulation</text>
+
+  <!-- 1. Under-Door Tool (UDT) -->
+  <g transform="translate(30, 80)">
+    <rect width="180" height="310" class="card-bg"/>
+    <text x="90" y="28" class="header-text">Under-Door Tool</text>
+
+    <!-- Drawing -->
+    <g transform="translate(35, 45)">
+      <path d="M 15 120 L 75 120 C 100 120 105 100 105 50 L 105 15" class="accent"/>
+      <path d="M 105 15 C 105 5 80 5 80 20 C 80 35 105 40 105 45" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+      <rect x="0" y="113" width="18" height="14" rx="3" fill="#38bdf8"/>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="140" y1="95" x2="115" y2="95" class="arrow"/>
+    <text x="90" y="195" class="label-text">LASSO WIRE LOOP</text>
+    
+    <text x="90" y="225" class="body-text">Targets interior lever</text>
+    <text x="90" y="242" class="body-text">handles through the</text>
+    <text x="90" y="259" class="body-text">door bottom undercut.</text>
+    <text x="90" y="285" class="body-text" fill="#38bdf8">Lever / Crash bar</text>
+  </g>
+
+  <!-- 2. Shove Knife -->
+  <g transform="translate(230, 80)">
+    <rect width="180" height="310" class="card-bg"/>
+    <text x="90" y="28" class="header-text">Shove Knife</text>
+
+    <!-- Drawing -->
+    <g transform="translate(45, 45)">
+      <rect x="35" y="60" width="20" height="65" rx="3" fill="#38bdf8"/>
+      <!-- Notched blade -->
+      <path d="M 38 60 L 38 10 Q 38 0 45 0 Q 52 0 52 10 L 52 35 L 42 35 L 42 45 L 52 45 L 52 60 Z" class="tool-body"/>
+    </g>
+
+    <!-- Arrow to notch -->
+    <line x1="130" y1="80" x2="90" y2="80" class="arrow"/>
+    <text x="90" y="195" class="label-text">LATCH BEVEL NOTCH</text>
+    
+    <text x="90" y="225" class="body-text">Retracts spring latch</text>
+    <text x="90" y="242" class="body-text">bolts directly through</text>
+    <text x="90" y="259" class="body-text">the door reveal seam.</text>
+    <text x="90" y="285" class="body-text" fill="#38bdf8">Outswing doors</text>
+  </g>
+
+  <!-- 3. Padlock Shims -->
+  <g transform="translate(430, 80)">
+    <rect width="180" height="310" class="card-bg"/>
+    <text x="90" y="28" class="header-text">Padlock Shims</text>
+
+    <!-- Drawing -->
+    <g transform="translate(45, 45)">
+      <path d="M 15 20 L 75 20 L 60 70 L 50 120 L 40 120 L 30 70 Z" class="tool-body"/>
+      <path d="M 38 120 L 45 105 L 52 120 Z" fill="#f59e0b"/>
+    </g>
+
+    <!-- Arrow to curved tip -->
+    <line x1="130" y1="150" x2="95" y2="150" class="arrow"/>
+    <text x="90" y="195" class="label-text">CURVED RETRACTOR BLADE</text>
+    
+    <text x="90" y="225" class="body-text">Slips down shackle</text>
+    <text x="90" y="242" class="body-text">collar to depress</text>
+    <text x="90" y="259" class="body-text">internal locking dogs.</text>
+    <text x="90" y="285" class="body-text" fill="#38bdf8">Spring-latch padlocks</text>
+  </g>
+
+  <!-- 4. Traveler Hook -->
+  <g transform="translate(630, 80)">
+    <rect width="180" height="310" class="card-bg"/>
+    <text x="90" y="28" class="header-text">Traveler Hook</text>
+
+    <!-- Drawing -->
+    <g transform="translate(45, 45)">
+      <rect x="35" y="60" width="20" height="65" rx="3" fill="#38bdf8"/>
+      <path d="M 45 60 L 45 15 L 20 15 L 20 28" class="tool-body" stroke-width="2.5" fill="none"/>
+    </g>
+
+    <!-- Arrow to hook -->
+    <line x1="40" y1="60" x2="65" y2="60" class="arrow"/>
+    <text x="90" y="195" class="label-text">ANGLED TRIP HOOK</text>
+    
+    <text x="90" y="225" class="body-text">Trips swing bolts &amp;</text>
+    <text x="90" y="242" class="body-text">Adams Rite mechanisms</text>
+    <text x="90" y="259" class="body-text">on storefront doors.</text>
+    <text x="90" y="285" class="body-text" fill="#38bdf8">Commercial glass</text>
+  </g>
+</svg>

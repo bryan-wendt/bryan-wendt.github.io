@@ -13,6 +13,9 @@ The pin tumbler lock is the most common mechanical locking mechanism in North Am
 
 ## Anatomy & Operational Principle
 
+![Pin Tumbler Cylinder Anatomy and Shear Line](/img/wiki/mechanisms/pin-tumbler-anatomy.svg)
+*Figure 1: Cutaway anatomy of a standard pin tumbler cylinder showing the bible, plug, springs, pin stacks, and the rotational shear line. Source & Reference: [Practical Lock Picking (Deviant Ollam) & MIT Guide to Lock Picking](/docs/resources/references).*
+
 A standard pin tumbler cylinder consists of:
 
 - **Plug (Core):** The inner rotating cylinder containing the keyway and pin chambers.
@@ -26,6 +29,9 @@ When the correct key is inserted, all pin interfaces align precisely along the s
 ---
 
 ## Security Pin Variations
+
+![Security Pin Profiles and False Set Feedback](/img/wiki/mechanisms/security-pins.svg)
+*Figure 2: Profile comparison of standard driver, spool, and serrated security pins under picking tension. Source & Reference: [TOOOL Training Materials & High-Security Mechanical Lock Forensics (Marc Weber Tobias)](/docs/resources/references).*
 
 To resist basic manipulation, manufacturers incorporate modified driver pin profiles:
 

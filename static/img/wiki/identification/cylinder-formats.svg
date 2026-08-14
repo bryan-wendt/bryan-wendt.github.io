@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .card-bg { fill: #1e293b; stroke: #334155; stroke-width: 1.5; rx: 10; }
+      .header-text { fill: #38bdf8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .body-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; text-anchor: middle; }
+      .label-text { fill: #f59e0b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 600; }
+      .metal-outer { fill: #475569; stroke: #94a3b8; stroke-width: 1.5; }
+      .metal-inner { fill: #334155; stroke: #38bdf8; stroke-width: 1.5; }
+      .keyway { fill: #020617; }
+      .thread { stroke: #64748b; stroke-width: 1.5; stroke-dasharray: 2 3; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="480" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Common Cylinder Formats &amp; Identifying Characteristics</text>
+  <text x="30" y="58" class="subtitle">Field taxonomy for exterior lock recognition and hardware identification</text>
+
+  <!-- 1. Mortise Cylinder -->
+  <g transform="translate(30, 80)">
+    <rect width="155" height="360" class="card-bg"/>
+    <text x="77" y="30" class="header-text">Mortise Cylinder</text>
+    
+    <!-- Drawing -->
+    <g transform="translate(27, 60)">
+      <!-- Threaded Body -->
+      <rect x="15" y="10" width="70" height="90" rx="6" class="metal-outer"/>
+      <line x1="15" y1="25" x2="85" y2="25" class="thread"/>
+      <line x1="15" y1="35" x2="85" y2="35" class="thread"/>
+      <line x1="15" y1="45" x2="85" y2="45" class="thread"/>
+      <line x1="15" y1="55" x2="85" y2="55" class="thread"/>
+      <line x1="15" y1="65" x2="85" y2="65" class="thread"/>
+      <line x1="15" y1="75" x2="85" y2="75" class="thread"/>
+      <line x1="15" y1="85" x2="85" y2="85" class="thread"/>
+      <!-- Plug Face -->
+      <circle cx="50" cy="55" r="22" class="metal-inner"/>
+      <path d="M48 40 L52 40 L52 65 L55 68 L45 68 L48 65 Z" class="keyway"/>
+      <!-- Rear Cam -->
+      <path d="M 85 45 L 100 35 L 100 65 L 85 60 Z" fill="#64748b" stroke="#94a3b8" stroke-width="1.5"/>
+    </g>
+    
+    <!-- Callout Arrow -->
+    <line x1="115" y1="90" x2="80" y2="90" class="arrow"/>
+    <text x="77" y="215" class="label-text" text-anchor="middle">THREADED CASING</text>
+    
+    <line x1="130" y1="130" x2="115" y2="130" class="arrow"/>
+    <text x="77" y="230" class="label-text" text-anchor="middle">REAR ROTATING CAM</text>
+
+    <text x="77" y="265" class="body-text">Commercial storefronts,</text>
+    <text x="77" y="282" class="body-text">glass doors, mortise cases.</text>
+    <text x="77" y="305" class="body-text" fill="#38bdf8">Threads into lock body</text>
+  </g>
+
+  <!-- 2. Rim Cylinder -->
+  <g transform="translate(200, 80)">
+    <rect width="155" height="360" class="card-bg"/>
+    <text x="77" y="30" class="header-text">Rim Cylinder</text>
+    
+    <!-- Drawing -->
+    <g transform="translate(27, 60)">
+      <!-- Smooth Body -->
+      <rect x="15" y="10" width="70" height="90" rx="6" class="metal-outer"/>
+      <circle cx="50" cy="55" r="22" class="metal-inner"/>
+      <path d="M48 40 L52 40 L52 65 L55 68 L45 68 L48 65 Z" class="keyway"/>
+      <!-- Tailpiece & Screws -->
+      <rect x="85" y="52" width="28" height="6" fill="#f59e0b"/>
+      <line x1="85" y1="28" x2="98" y2="28" stroke="#94a3b8" stroke-width="3"/>
+      <line x1="85" y1="82" x2="98" y2="82" stroke="#94a3b8" stroke-width="3"/>
+    </g>
+
+    <!-- Callout Arrow -->
+    <line x1="125" y1="140" x2="105" y2="140" class="arrow"/>
+    <text x="77" y="215" class="label-text" text-anchor="middle">FLAT TAILPIECE</text>
+    <text x="77" y="230" class="label-text" text-anchor="middle">REAR BOLT MOUNTING</text>
+
+    <text x="77" y="265" class="body-text">Panic exit crash bars,</text>
+    <text x="77" y="282" class="body-text">surface deadbolts.</text>
+    <text x="77" y="305" class="body-text" fill="#38bdf8">Smooth outer housing</text>
+  </g>
+
+  <!-- 3. Key-in-Knob (KIK) -->
+  <g transform="translate(370, 80)">
+    <rect width="155" height="360" class="card-bg"/>
+    <text x="77" y="30" class="header-text">Key-in-Knob (KIK)</text>
+    
+    <!-- Drawing -->
+    <g transform="translate(27, 60)">
+      <circle cx="50" cy="55" r="32" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+      <circle cx="50" cy="55" r="22" class="metal-inner"/>
+      <path d="M48 40 L52 40 L52 65 L55 68 L45 68 L48 65 Z" class="keyway"/>
+      <rect x="82" y="52" width="22" height="6" fill="#94a3b8"/>
+    </g>
+
+    <!-- Callout Arrow -->
+    <line x1="30" y1="130" x2="45" y2="130" class="arrow"/>
+    <text x="77" y="215" class="label-text" text-anchor="middle">CYLINDER IN LEVER</text>
+    <text x="77" y="230" class="label-text" text-anchor="middle">COMPACT PLUG CORE</text>
+
+    <text x="77" y="265" class="body-text">Commercial lever handles,</text>
+    <text x="77" y="282" class="body-text">residential doorknobs.</text>
+    <text x="77" y="305" class="body-text" fill="#38bdf8">Contained inside handle</text>
+  </g>
+
+  <!-- 4. Euro Profile -->
+  <g transform="translate(540, 80)">
+    <rect width="155" height="360" class="card-bg"/>
+    <text x="77" y="30" class="header-text">Euro Profile</text>
+    
+    <!-- Drawing -->
+    <g transform="translate(32, 60)">
+      <!-- Figure 8 Outline -->
+      <path d="M 30 20 C 30 5 60 5 60 20 C 60 30 55 35 55 45 C 55 60 62 65 62 80 C 62 95 28 95 28 80 C 28 65 35 60 35 45 C 35 35 30 30 30 20 Z" class="metal-outer"/>
+      <circle cx="45" cy="30" r="14" class="metal-inner"/>
+      <path d="M44 20 L46 20 L46 36 L48 38 L42 38 L44 36 Z" class="keyway"/>
+      <circle cx="45" cy="75" r="4" fill="#0f172a" stroke="#94a3b8"/>
+    </g>
+
+    <!-- Callout Arrow -->
+    <line x1="120" y1="120" x2="85" y2="120" class="arrow"/>
+    <text x="77" y="215" class="label-text" text-anchor="middle">FIGURE-8 PROFILE</text>
+    <text x="77" y="230" class="label-text" text-anchor="middle">CENTRAL MOUNT SCREW</text>
+
+    <text x="77" y="265" class="body-text">European architectural</text>
+    <text x="77" y="282" class="body-text">doors, multi-point locks.</text>
+    <text x="77" y="305" class="body-text" fill="#38bdf8">Single or double cylinder</text>
+  </g>
+
+  <!-- 5. Small Format IC (SFIC) -->
+  <g transform="translate(710, 80)">
+    <rect width="155" height="360" class="card-bg"/>
+    <text x="77" y="30" class="header-text">SFIC Core</text>
+    
+    <!-- Drawing -->
+    <g transform="translate(32, 60)">
+      <!-- Figure 8 Core Outline -->
+      <path d="M 28 20 A 18 18 0 0 1 62 20 A 18 18 0 0 1 56 38 A 18 18 0 0 1 62 58 A 18 18 0 0 1 28 58 A 18 18 0 0 1 34 38 A 18 18 0 0 1 28 20 Z" fill="#475569" stroke="#38bdf8" stroke-width="1.5"/>
+      <circle cx="45" cy="58" r="12" class="metal-inner"/>
+      <path d="M44 50 L46 50 L46 64 L48 66 L42 66 L44 64 Z" class="keyway"/>
+      <rect x="42" y="22" width="6" height="12" fill="#0f172a"/>
+    </g>
+
+    <!-- Callout Arrow -->
+    <line x1="120" y1="95" x2="85" y2="95" class="arrow"/>
+    <text x="77" y="215" class="label-text" text-anchor="middle">DUAL SHEAR LINE</text>
+    <text x="77" y="230" class="label-text" text-anchor="middle">CONTROL KEY SLEEVE</text>
+
+    <text x="77" y="265" class="body-text">Universities, corporate</text>
+    <text x="77" y="282" class="body-text">institutions, hospitals.</text>
+    <text x="77" y="305" class="body-text" fill="#38bdf8">Interchangeable Core</text>
+  </g>
+</svg>

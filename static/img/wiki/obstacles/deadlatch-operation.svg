@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg { fill: #1e293b; stroke: #334155; stroke-width: 1.5; rx: 10; }
+      .header-text { fill: #38bdf8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .body-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+      .label-text { fill: #f59e0b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; }
+      .door-edge { fill: #334155; stroke: #64748b; stroke-width: 2; }
+      .strike-plate { fill: #475569; stroke: #94a3b8; stroke-width: 2; }
+      .latch-bolt { fill: #38bdf8; stroke: #0284c7; stroke-width: 1.5; }
+      .aux-pin { fill: #f59e0b; stroke: #d97706; stroke-width: 1.5; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="400" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Deadlocking Latch vs Latch Slip Vulnerability</text>
+  <text x="30" y="58" class="subtitle">Proper strike plate alignment vs misaligned installation allowing shove knife bypass</text>
+
+  <!-- Left: Proper Installation (Secure) -->
+  <g transform="translate(40, 80)">
+    <rect width="360" height="290" class="card-bg"/>
+    <text x="180" y="28" class="header-text">1. Proper Strike Alignment (Secure)</text>
+
+    <g transform="translate(60, 45)">
+      <!-- Door Edge (Left) -->
+      <rect x="0" y="20" width="80" height="130" class="door-edge" rx="4"/>
+      
+      <!-- Main Latch Bolt (Enters strike cutout) -->
+      <path d="M 80 40 L 140 40 L 155 65 L 80 65 Z" class="latch-bolt"/>
+      
+      <!-- Auxiliary Deadlatch Pin (Depressed by strike plate face) -->
+      <rect x="80" y="70" width="25" height="20" rx="2" class="aux-pin"/>
+
+      <!-- Frame & Strike Plate (Right) -->
+      <rect x="155" y="0" width="80" height="170" fill="#1e293b" stroke="#64748b" stroke-width="2" rx="4"/>
+      <!-- Strike Cutout Hole (Only fits main latch) -->
+      <rect x="155" y="35" width="40" height="35" fill="#020617"/>
+      <!-- Solid Strike Plate Face (Blocks Aux Pin) -->
+      <rect x="155" y="70" width="10" height="100" fill="#94a3b8"/>
+    </g>
+
+    <!-- Arrow to depressed aux pin -->
+    <line x1="30" y1="125" x2="135" y2="125" class="arrow"/>
+    <text x="25" y="120" class="label-text" text-anchor="end">AUX PIN DEPRESSED</text>
+
+    <text x="180" y="230" class="body-text" text-anchor="middle">Auxiliary pin is pushed back into door case</text>
+    <text x="180" y="248" class="body-text" text-anchor="middle" fill="#38bdf8">Deadlocks the main latch against slipping</text>
+    <text x="180" y="268" class="body-text" text-anchor="middle" fill="#10b981">Secure against shove knife</text>
+  </g>
+
+  <!-- Right: Misaligned (Vulnerable) -->
+  <g transform="translate(440, 80)">
+    <rect width="360" height="290" class="card-bg"/>
+    <text x="180" y="28" class="header-text">2. Oversized / Misaligned Strike (Vulnerable)</text>
+
+    <g transform="translate(60, 45)">
+      <!-- Door Edge (Left) -->
+      <rect x="0" y="20" width="80" height="130" class="door-edge" rx="4"/>
+      
+      <!-- Main Latch Bolt -->
+      <path d="M 80 40 L 140 40 L 155 65 L 80 65 Z" class="latch-bolt"/>
+      
+      <!-- Auxiliary Pin FULLY EXTENDED into oversized strike opening -->
+      <rect x="80" y="70" width="55" height="20" rx="2" class="aux-pin"/>
+
+      <!-- Frame with oversized strike cutout -->
+      <rect x="155" y="0" width="80" height="170" fill="#1e293b" stroke="#64748b" stroke-width="2" rx="4"/>
+      <rect x="155" y="35" width="40" height="65" fill="#020617"/>
+    </g>
+
+    <!-- Arrow to extended aux pin -->
+    <line x1="30" y1="125" x2="135" y2="125" class="arrow"/>
+    <text x="25" y="120" class="label-text" text-anchor="end" fill="#ef4444">AUX PIN EXTENDED</text>
+
+    <text x="180" y="230" class="body-text" text-anchor="middle">Auxiliary pin falls into the strike opening</text>
+    <text x="180" y="248" class="body-text" text-anchor="middle" fill="#ef4444">Deadlocking mechanism fails to engage</text>
+    <text x="180" y="268" class="body-text" text-anchor="middle" fill="#f59e0b">Easily slipped with shove knife / mica</text>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 440" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg { fill: #0f172a; stroke: #334155; stroke-width: 1.5; rx: 12; }
+      .bible { fill: #1e293b; stroke: #64748b; stroke-width: 2; }
+      .plug { fill: #334155; stroke: #38bdf8; stroke-width: 2; }
+      .spring { stroke: #94a3b8; stroke-width: 2; fill: none; }
+      .driver-pin { fill: #38bdf8; stroke: #0284c7; stroke-width: 1.5; }
+      .key-pin { fill: #f59e0b; stroke: #d97706; stroke-width: 1.5; }
+      .shear-line { stroke: #ef4444; stroke-width: 2; stroke-dasharray: 4 4; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+      .label { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 700; }
+      .desc { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="440" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Pin Tumbler Cylinder Anatomy &amp; Shear Line</text>
+  <text x="30" y="58" class="subtitle">Internal components, pin stack mechanics, and rotational shear interface</text>
+
+  <!-- Cutaway Housing -->
+  <g transform="translate(40, 90)">
+    <!-- Bible (Upper Housing) -->
+    <rect x="190" y="20" width="350" height="110" class="bible" rx="6"/>
+    <text x="560" y="70" class="label">BIBLE (HULL)</text>
+    <text x="560" y="88" class="desc">Contains driver pin chambers &amp; springs</text>
+
+    <!-- Plug (Rotating Core) -->
+    <rect x="150" y="130" width="390" height="130" class="plug" rx="8"/>
+    <text x="560" y="190" class="label">PLUG (CORE)</text>
+    <text x="560" y="208" class="desc">Inner cylinder containing keyway</text>
+
+    <!-- Shear Line Indicator -->
+    <line x1="130" y1="130" x2="550" y2="130" class="shear-line"/>
+    <text x="560" y="134" class="label" fill="#ef4444">SHEAR LINE</text>
+    <text x="560" y="150" class="desc" fill="#f87171">Boundary where plug rotates in housing</text>
+
+    <!-- 5 Pin Chambers -->
+    <!-- Chamber 1 -->
+    <g transform="translate(210, 20)">
+      <path d="M 12 5 L 12 10 L 28 15 L 12 20 L 28 25 L 12 30 L 20 35" class="spring"/>
+      <rect x="10" y="35" width="20" height="50" rx="3" class="driver-pin"/>
+      <path d="M 10 90 L 30 90 L 30 140 L 20 155 L 10 140 Z" class="key-pin"/>
+    </g>
+
+    <!-- Chamber 2 -->
+    <g transform="translate(275, 20)">
+      <path d="M 12 5 L 12 10 L 28 15 L 12 20 L 28 25 L 12 30 L 20 35" class="spring"/>
+      <rect x="10" y="35" width="20" height="50" rx="3" class="driver-pin"/>
+      <path d="M 10 90 L 30 90 L 30 150 L 20 165 L 10 150 Z" class="key-pin"/>
+    </g>
+
+    <!-- Chamber 3 -->
+    <g transform="translate(340, 20)">
+      <path d="M 12 5 L 12 10 L 28 15 L 12 20 L 28 25 L 12 30 L 20 35" class="spring"/>
+      <rect x="10" y="35" width="20" height="50" rx="3" class="driver-pin"/>
+      <path d="M 10 90 L 30 90 L 30 120 L 20 135 L 10 120 Z" class="key-pin"/>
+    </g>
+
+    <!-- Chamber 4 -->
+    <g transform="translate(405, 20)">
+      <path d="M 12 5 L 12 10 L 28 15 L 12 20 L 28 25 L 12 30 L 20 35" class="spring"/>
+      <rect x="10" y="35" width="20" height="50" rx="3" class="driver-pin"/>
+      <path d="M 10 90 L 30 90 L 30 160 L 20 175 L 10 160 Z" class="key-pin"/>
+    </g>
+
+    <!-- Chamber 5 -->
+    <g transform="translate(470, 20)">
+      <path d="M 12 5 L 12 10 L 28 15 L 12 20 L 28 25 L 12 30 L 20 35" class="spring"/>
+      <rect x="10" y="35" width="20" height="50" rx="3" class="driver-pin"/>
+      <path d="M 10 90 L 30 90 L 30 130 L 20 145 L 10 130 Z" class="key-pin"/>
+    </g>
+
+    <!-- Left Annotation Arrows & Labels -->
+    <!-- Springs Arrow -->
+    <line x1="120" y1="35" x2="210" y2="35" class="arrow"/>
+    <text x="110" y="38" class="label" text-anchor="end">SPRINGS</text>
+
+    <!-- Driver Pins Arrow -->
+    <line x1="120" y1="75" x2="210" y2="75" class="arrow"/>
+    <text x="110" y="70" class="label" text-anchor="end" fill="#38bdf8">DRIVER PINS</text>
+    <text x="110" y="85" class="desc" text-anchor="end">Blocks rotation</text>
+
+    <!-- Key Pins Arrow -->
+    <line x1="120" y1="180" x2="210" y2="180" class="arrow"/>
+    <text x="110" y="175" class="label" text-anchor="end" fill="#f59e0b">KEY PINS</text>
+    <text x="110" y="190" class="desc" text-anchor="end">Matches key cuts</text>
+  </g>
+</svg>

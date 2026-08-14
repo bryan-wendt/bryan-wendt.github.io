@@ -257,4 +257,32 @@ article [class*='author'] {
   padding: 0.2rem 0.5rem;
 }
 
+/* Documentation Technical Diagrams & Figures */
+.theme-doc-markdown img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--bw-card-border);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+  margin: 1.5rem auto 0.5rem;
+  background: #0b1120;
+}
+
+.theme-doc-markdown p > em:only-child,
+.theme-doc-markdown p > em {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.theme-doc-markdown p > em a {
+  color: var(--ifm-color-primary-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+
 

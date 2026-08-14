@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg { fill: #1e293b; stroke: #334155; stroke-width: 1.5; rx: 10; }
+      .header-text { fill: #38bdf8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .body-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; text-anchor: middle; }
+      .label-text { fill: #f59e0b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; }
+      .plug { fill: #334155; stroke: #64748b; stroke-width: 2; }
+      .keyway-cut { fill: #020617; stroke: #38bdf8; stroke-width: 1.5; }
+      .centerline { stroke: #ef4444; stroke-width: 1.5; stroke-dasharray: 3 3; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="360" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Keyway Warding Taxonomy: Open vs Paracentric vs Restricted</text>
+  <text x="30" y="58" class="subtitle">Warding profiles dictate pick thickness, tool clearance, and bypass difficulty</text>
+
+  <!-- 1. Open Keyway -->
+  <g transform="translate(40, 80)">
+    <rect width="220" height="250" class="card-bg"/>
+    <text x="110" y="28" class="header-text">Open Keyway (e.g. KW1)</text>
+
+    <!-- Plug Face -->
+    <circle cx="110" cy="95" r="45" class="plug"/>
+    <!-- Centerline -->
+    <line x1="110" y1="55" x2="110" y2="135" class="centerline"/>
+    <!-- Straight Keyway Slot -->
+    <path d="M 104 60 L 116 60 L 116 115 L 122 125 L 98 125 L 104 115 Z" class="keyway-cut"/>
+
+    <line x1="180" y1="95" x2="125" y2="95" class="arrow"/>
+    <text x="110" y="168" class="label-text" text-anchor="middle">WIDE STRAIGHT CHANNEL</text>
+    <text x="110" y="195" class="body-text">Minimal warding interference.</text>
+    <text x="110" y="213" class="body-text">Accepts thick 0.025" picks.</text>
+    <text x="110" y="233" class="body-text" fill="#38bdf8">High pick vulnerability</text>
+  </g>
+
+  <!-- 2. Paracentric Keyway -->
+  <g transform="translate(290, 80)">
+    <rect width="220" height="250" class="card-bg"/>
+    <text x="110" y="28" class="header-text">Paracentric (e.g. SC1/SC4)</text>
+
+    <!-- Plug Face -->
+    <circle cx="110" cy="95" r="45" class="plug"/>
+    <!-- Centerline -->
+    <line x1="110" y1="55" x2="110" y2="135" class="centerline"/>
+    <!-- Curved Warding extending PAST centerline -->
+    <path d="M 105 60 L 113 60 L 113 75 L 122 85 L 108 92 L 118 102 L 106 115 L 120 125 L 100 125 L 104 110 L 98 98 L 112 88 L 105 75 Z" class="keyway-cut"/>
+
+    <line x1="185" y1="88" x2="120" y2="88" class="arrow"/>
+    <text x="110" y="168" class="label-text" text-anchor="middle">WARDING CROSSES CENTERLINE</text>
+    <text x="110" y="195" class="body-text">Blocks straight pick access.</text>
+    <text x="110" y="213" class="body-text">Requires 0.020" or 0.015" picks.</text>
+    <text x="110" y="233" class="body-text" fill="#38bdf8">Requires TOK tensioning</text>
+  </g>
+
+  <!-- 3. Restricted / High-Security -->
+  <g transform="translate(540, 80)">
+    <rect width="220" height="250" class="card-bg"/>
+    <text x="110" y="28" class="header-text">Restricted / Patented</text>
+
+    <!-- Plug Face -->
+    <circle cx="110" cy="95" r="45" class="plug"/>
+    <!-- Intricate Warding & Sidebar Channel -->
+    <path d="M 106 60 L 114 60 L 114 70 L 124 78 L 104 88 L 122 96 L 106 108 L 118 122 L 102 125 L 98 108 L 114 96 L 96 86 L 108 74 Z" class="keyway-cut"/>
+    <rect x="70" y="90" width="8" height="15" fill="#f59e0b"/>
+
+    <line x1="45" y1="97" x2="65" y2="97" class="arrow"/>
+    <text x="110" y="168" class="label-text" text-anchor="middle">SIDEBAR / ACTIVE ELEMENT</text>
+    <text x="110" y="195" class="body-text">Patented profiles (Medeco/Primus).</text>
+    <text x="110" y="213" class="body-text">Secondary locking mechanism.</text>
+    <text x="110" y="233" class="body-text" fill="#38bdf8">High manipulation resistance</text>
+  </g>
+</svg>

@@ -11,6 +11,18 @@ Door assemblies form the primary physical perimeter of buildings and secured int
 
 ---
 
+## Deadlatch Alignment & Latch Slipping
+
+![Deadlocking Latch vs Latch Slip Vulnerability](/img/wiki/obstacles/deadlatch-operation.svg)
+*Figure 1: Proper auxiliary deadlatch pin depression (deadlocked against shove knife) vs misaligned strike installation permitting bypass. Source & Reference: [BHMA Door Hardware Guidelines & Deviant Ollam Door Bypasses](/docs/resources/references).*
+
+The deadlocking auxiliary pin is a critical defense on latch mechanisms:
+
+- When installed properly, the main latch bolt falls into the strike opening while the smaller auxiliary pin remains depressed against the flat strike plate face, mechanically deadlocking the main bolt.
+- If the strike plate is misaligned or oversized, the auxiliary pin falls into the strike opening, leaving the spring latch completely vulnerable to slipping with a shove knife or credit card.
+
+---
+
 ## Door Swing Directions
 
 | Swing Type | Identification | Primary Bypass Vectors |

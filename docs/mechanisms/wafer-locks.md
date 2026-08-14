@@ -11,22 +11,25 @@ Wafer tumbler locks utilize flat spring-loaded metal plates (wafers) rather than
 
 ---
 
-## Common Deployments
-
-- Desk drawers, filing cabinets, and office furniture.
-- Electrical enclosures, server rack panels, and utility cabinets.
-- Mailboxes and basic padlock models.
-- Older automotive door and ignition locks.
-
----
-
 ## Operating Mechanics
+
+![Wafer Tumbler Mechanism and Alignment](/img/wiki/mechanisms/wafer-mechanism.svg)
+*Figure 1: Wafer tumbler locked state (protruding into outer housing) vs unlocked state (flush shear alignment with key). Source & Reference: [ALOA Locksmith Technical Manuals & TOOOL Mechanism Guides](/docs/resources/references).*
 
 Unlike pin tumbler locks where pins are split into upper and lower halves:
 
 1. Each wafer is a single solid metal stamped piece with a rectangular window in the center through which the key passes.
 2. In the resting (locked) position, springs push the top or bottom of the wafer out of the plug into the outer cylinder grooves, preventing rotation.
 3. The correct key bitting lifts or pulls each wafer so that all outer edges sit flush with the plug circumference.
+
+---
+
+## Common Deployments
+
+- Desk drawers, filing cabinets, and office furniture.
+- Electrical enclosures, server rack panels, and utility cabinets.
+- Mailboxes and basic padlock models.
+- Older automotive door and ignition locks.
 
 ---
 

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg { fill: #1e293b; stroke: #334155; stroke-width: 1.5; rx: 10; }
+      .header-text { fill: #38bdf8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .body-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; text-anchor: middle; }
+      .label-text { fill: #f59e0b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; }
+      .pin-body { fill: #38bdf8; stroke: #0284c7; stroke-width: 1.5; }
+      .shear-line { stroke: #ef4444; stroke-width: 1.5; stroke-dasharray: 4 4; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="380" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Security Pin Profiles &amp; Manipulation Feedback</text>
+  <text x="30" y="58" class="subtitle">Modified driver pins engineered to create false sets and resist picking</text>
+
+  <!-- 1. Standard Pin -->
+  <g transform="translate(40, 80)">
+    <rect width="220" height="270" class="card-bg"/>
+    <text x="110" y="28" class="header-text">Standard Driver Pin</text>
+
+    <!-- Pin Drawing -->
+    <g transform="translate(85, 50)">
+      <rect x="0" y="10" width="50" height="90" rx="4" class="pin-body"/>
+      <line x1="-30" y1="55" x2="80" y2="55" class="shear-line"/>
+    </g>
+
+    <text x="110" y="175" class="label-text" text-anchor="middle">UNIFORM CYLINDER BODY</text>
+    <text x="110" y="202" class="body-text">Moves smoothly across shear line.</text>
+    <text x="110" y="220" class="body-text">Gives crisp click upon setting.</text>
+    <text x="110" y="240" class="body-text" fill="#38bdf8">Vulnerable to SPP &amp; Raking</text>
+  </g>
+
+  <!-- 2. Spool Pin -->
+  <g transform="translate(290, 80)">
+    <rect width="220" height="270" class="card-bg"/>
+    <text x="110" y="28" class="header-text">Spool Security Pin</text>
+
+    <!-- Pin Drawing -->
+    <g transform="translate(85, 50)">
+      <!-- Spool Shape -->
+      <path d="M 0 10 L 50 10 L 50 25 L 35 25 L 35 75 L 50 75 L 50 90 L 0 90 L 0 75 L 15 75 L 15 25 L 0 25 Z" class="pin-body"/>
+      <line x1="-30" y1="55" x2="80" y2="55" class="shear-line"/>
+    </g>
+
+    <!-- Arrow to narrow waist -->
+    <line x1="20" y1="105" x2="98" y2="105" class="arrow"/>
+    <text x="110" y="175" class="label-text" text-anchor="middle">NARROW CENTER WAIST</text>
+    <text x="110" y="202" class="body-text">Catches on plug edge (False Set).</text>
+    <text x="110" y="220" class="body-text">Requires counter-rotation to set.</text>
+    <text x="110" y="240" class="body-text" fill="#f59e0b">Resists raking &amp; bumping</text>
+  </g>
+
+  <!-- 3. Serrated Pin -->
+  <g transform="translate(540, 80)">
+    <rect width="220" height="270" class="card-bg"/>
+    <text x="110" y="28" class="header-text">Serrated Security Pin</text>
+
+    <!-- Pin Drawing -->
+    <g transform="translate(85, 50)">
+      <!-- Serrated Shape -->
+      <path d="M 0 10 L 50 10 L 50 22 L 40 22 L 40 28 L 50 28 L 50 40 L 40 40 L 40 46 L 50 46 L 50 58 L 40 58 L 40 64 L 50 64 L 50 76 L 40 76 L 40 82 L 50 82 L 50 90 L 0 90 L 0 82 L 10 82 L 10 76 L 0 76 L 0 64 L 10 64 L 10 58 L 0 58 L 0 46 L 10 46 L 10 40 L 0 40 L 0 28 L 10 28 L 10 22 L 0 22 Z" class="pin-body"/>
+      <line x1="-30" y1="55" x2="80" y2="55" class="shear-line"/>
+    </g>
+
+    <!-- Arrow to serrations -->
+    <line x1="20" y1="105" x2="93" y2="105" class="arrow"/>
+    <text x="110" y="175" class="label-text" text-anchor="middle">MICRO-SERRATION GROOVES</text>
+    <text x="110" y="202" class="body-text">Produces multiple false clicks.</text>
+    <text x="110" y="220" class="body-text">Mimics true shear line feedback.</text>
+    <text x="110" y="240" class="body-text" fill="#ef4444">High SPP resistance</text>
+  </g>
+</svg>

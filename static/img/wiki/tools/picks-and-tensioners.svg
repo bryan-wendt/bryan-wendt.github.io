@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg { fill: #1e293b; stroke: #334155; stroke-width: 1.5; rx: 10; }
+      .header-text { fill: #38bdf8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .body-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+      .label-text { fill: #f59e0b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; }
+      .tool-steel { stroke: #cbd5e1; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+      .handle { fill: #38bdf8; rx: 3; }
+      .plug { fill: #334155; stroke: #64748b; stroke-width: 2; }
+      .keyway { fill: #020617; stroke: #38bdf8; stroke-width: 1; }
+      .wrench { fill: #f59e0b; stroke: #d97706; stroke-width: 1; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="420" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Lock Pick Profiles &amp; Tension Placement Standards</text>
+  <text x="30" y="58" class="subtitle">Primary pick tip geometries and Top of Keyway (TOK) vs Bottom of Keyway (BOK) dynamics</text>
+
+  <!-- Left: Pick Profiles -->
+  <g transform="translate(40, 80)">
+    <rect width="360" height="310" class="card-bg"/>
+    <text x="180" y="28" class="header-text">Essential Pick Profiles</text>
+
+    <!-- Short Hook -->
+    <g transform="translate(40, 50)">
+      <rect x="0" y="8" width="60" height="14" class="handle"/>
+      <path d="M 60 15 L 200 15 Q 220 15 220 3" class="tool-steel"/>
+      <text x="235" y="12" class="label-text">SHORT HOOK</text>
+      <text x="235" y="26" class="body-text">General SPP</text>
+    </g>
+
+    <!-- Medium / Deep Hook -->
+    <g transform="translate(40, 105)">
+      <rect x="0" y="8" width="60" height="14" class="handle"/>
+      <path d="M 60 15 L 195 15 Q 215 15 215 -6" class="tool-steel"/>
+      <text x="235" y="12" class="label-text">DEEP HOOK</text>
+      <text x="235" y="26" class="body-text">High-low bitting</text>
+    </g>
+
+    <!-- Bogota / Triple Peak Rake -->
+    <g transform="translate(40, 160)">
+      <rect x="0" y="8" width="60" height="14" class="handle"/>
+      <path d="M 60 15 L 175 15 Q 180 5 185 15 Q 190 5 195 15 Q 200 5 205 15 L 215 15" class="tool-steel"/>
+      <text x="235" y="12" class="label-text">BOGOTA RAKE</text>
+      <text x="235" y="26" class="body-text">Kinetic scrubbing</text>
+    </g>
+
+    <!-- Half Diamond -->
+    <g transform="translate(40, 215)">
+      <rect x="0" y="8" width="60" height="14" class="handle"/>
+      <path d="M 60 15 L 195 15 L 205 5 L 215 15" class="tool-steel"/>
+      <text x="235" y="12" class="label-text">HALF DIAMOND</text>
+      <text x="235" y="26" class="body-text">Wafer &amp; ramp lifting</text>
+    </g>
+
+    <text x="180" y="295" class="body-text" text-anchor="middle" fill="#38bdf8">Thicknesses: 0.025" (Standard) • 0.020" (Euro) • 0.015" (Slim)</text>
+  </g>
+
+  <!-- Right: TOK vs BOK Tension -->
+  <g transform="translate(440, 80)">
+    <rect width="360" height="310" class="card-bg"/>
+    <text x="180" y="28" class="header-text">Tension Wrench Placement</text>
+
+    <!-- TOK Tension (Top of Keyway) -->
+    <g transform="translate(50, 50)">
+      <circle cx="50" cy="50" r="35" class="plug"/>
+      <path d="M 45 25 L 55 25 L 55 75 L 45 75 Z" class="keyway"/>
+      <!-- TOK Prybar in top of keyway -->
+      <rect x="44" y="20" width="12" height="14" class="wrench" rx="2"/>
+      <rect x="25" y="12" width="22" height="8" class="wrench" rx="2"/>
+
+      <line x1="120" y1="20" x2="60" y2="20" class="arrow"/>
+      <text x="130" y="18" class="label-text" fill="#10b981">TOP OF KEYWAY (TOK)</text>
+      <text x="130" y="34" class="body-text">Flat prybar in top slot.</text>
+      <text x="130" y="48" class="body-text">Maximizes pick workspace.</text>
+      <text x="130" y="62" class="body-text" fill="#10b981">Recommended standard</text>
+    </g>
+
+    <!-- BOK Tension (Bottom of Keyway) -->
+    <g transform="translate(50, 165)">
+      <circle cx="50" cy="50" r="35" class="plug"/>
+      <path d="M 45 25 L 55 25 L 55 75 L 45 75 Z" class="keyway"/>
+      <!-- BOK L-wrench in bottom of keyway -->
+      <rect x="44" y="68" width="12" height="14" class="wrench" rx="2"/>
+      <rect x="20" y="74" width="26" height="8" class="wrench" rx="2"/>
+
+      <line x1="120" y1="78" x2="60" y2="78" class="arrow"/>
+      <text x="130" y="74" class="label-text" fill="#f59e0b">BOTTOM OF KEYWAY (BOK)</text>
+      <text x="130" y="90" class="body-text">L-wrench in bottom slot.</text>
+      <text x="130" y="104" class="body-text">Can restrict pick movement.</text>
+      <text x="130" y="118" class="body-text" fill="#f59e0b">Useful for raking</text>
+    </g>
+
+    <text x="180" y="295" class="body-text" text-anchor="middle">Light tension allows pins to bind without jamming.</text>
+  </g>
+</svg>

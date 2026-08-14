@@ -13,6 +13,9 @@ Lock picking is the non-destructive manipulation of a cylinder's internal compon
 
 ## Single Pin Picking (SPP) Methodology
 
+![Single Pin Picking Binding Order and Setting Mechanics](/img/wiki/techniques/spp-binding.svg)
+*Figure 1: Rotational torque creating a binding ledge, feeling the rigid binding pin, and setting driver pins above the shear line. Source & Reference: [MIT Guide to Lock Picking (Theodore T. Tool) & Practical Lock Picking](/docs/resources/references).*
+
 Single Pin Picking relies on microscopic manufacturing tolerances where pin chambers are never drilled in a perfectly straight line. When rotational tension is applied to the plug, **one pin stack binds first**.
 
 ### Step-by-Step Procedure

@@ -29,6 +29,9 @@ When approaching a lock in the field, evaluate the hardware in the following seq
 
 ## Common Cylinder Types
 
+![Common Cylinder Formats and Identifying Characteristics](/img/wiki/identification/cylinder-formats.svg)
+*Figure 1: Comparison of primary cylinder formats, mounting styles, and identifying exterior traits. Source & Reference: [ALOA International Locksmith Standards & BHMA Guidelines](/docs/resources/references).*
+
 | Cylinder Type | Common Locations | Exterior Features |
 | :--- | :--- | :--- |
 | **Mortise Cylinder** | Commercial storefronts, glass aluminum doors | Threaded exterior body with a cam on the rear |
@@ -40,6 +43,9 @@ When approaching a lock in the field, evaluate the hardware in the following seq
 ---
 
 ## Keyway Taxonomy
+
+![Keyway Warding Profiles Comparison](/img/wiki/identification/keyway-profiles.svg)
+*Figure 2: Open vs Paracentric vs Restricted keyway warding profiles and pick clearance. Source & Reference: [TOOOL Keyway Specifications & Deviant Ollam Research](/docs/resources/references).*
 
 Keyway profiles dictate the type and thickness of picks, decoders, or bump keys that can be inserted into the plug:
 

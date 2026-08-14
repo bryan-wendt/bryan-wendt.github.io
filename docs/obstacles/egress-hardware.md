@@ -11,6 +11,19 @@ Life safety codes require commercial building exits to permit unimpeded egress f
 
 ---
 
+## Under-Door Tool & Lever Handle Dynamics
+
+![Under-Door Tool Deployment Vector](/img/wiki/obstacles/udt-deployment.svg)
+*Figure 1: Cross-section showing Under-Door Tool path under the threshold gap and cable lasso depression of interior lever handle. Source & Reference: [Physical Penetration Testing Guidelines & Deviant Ollam Research](/docs/resources/references).*
+
+On doors equipped with interior lever handles:
+
+1. The semi-rigid wire base slides beneath the undercut gap (3/8" to 3/4").
+2. The operator aligns the cable loop over the lever handle from the outside.
+3. Pulling the cable depresses the lever, releasing the latch bolt and opening the door without physical damage.
+
+---
+
 ## Exit Device Classifications
 
 - **Crash Bars / Touch Bars:** Horizontal push bars across the width of the door that retract the latch upon pressure.

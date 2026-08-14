@@ -11,6 +11,13 @@ Lock picks and tensioners are the foundational tools for cylinder manipulation. 
 
 ---
 
+## Pick Profiles & Tension Placement
+
+![Lock Pick Profiles and Tension Tool Placement](/img/wiki/tools/picks-and-tensioners.svg)
+*Figure 1: Essential pick profiles (Short Hook, Deep Hook, Bogota, Half Diamond) and Top of Keyway (TOK) vs Bottom of Keyway (BOK) dynamics. Source & Reference: [TOOOL Equipment Standards & Practical Lock Picking (Deviant Ollam)](/docs/resources/references).*
+
+---
+
 ## Pick Profiles
 
 | Profile | Best Used For | Notes |

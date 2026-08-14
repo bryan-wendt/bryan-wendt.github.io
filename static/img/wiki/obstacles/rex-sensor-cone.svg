@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg { fill: #0f172a; stroke: #334155; stroke-width: 1.5; rx: 12; }
+      .door-header { fill: #1e293b; stroke: #64748b; stroke-width: 2; }
+      .door-leaf { fill: #334155; stroke: #475569; stroke-width: 2; }
+      .sensor-box { fill: #475569; stroke: #38bdf8; stroke-width: 2; }
+      .detection-cone { fill: #38bdf8; fill-opacity: 0.12; stroke: #38bdf8; stroke-width: 1.5; stroke-dasharray: 4 4; }
+      .maglock { fill: #ef4444; stroke: #b91c1c; stroke-width: 2; }
+      .thermal-spray { fill: #a855f7; stroke: #c084fc; stroke-width: 2; stroke-dasharray: 3 2; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; fill: none; marker-end: url(#arrow-amber); }
+      .title { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 800; }
+      .subtitle { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; }
+      .label { fill: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 700; }
+      .desc { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; }
+    </style>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="400" fill="#0b1120" rx="12" stroke="#1e293b" stroke-width="2"/>
+  
+  <text x="30" y="38" class="title">Request to Exit (REX) Sensor Field &amp; Bypass Vector</text>
+  <text x="30" y="58" class="subtitle">Passive Infrared (PIR) detection cone coverage above magnetic lock installations</text>
+
+  <g transform="translate(60, 80)">
+    <!-- Header Frame -->
+    <rect x="180" y="20" width="360" height="40" class="door-header" rx="4"/>
+    
+    <!-- Maglock Body (Mounted on frame header) -->
+    <rect x="220" y="60" width="100" height="25" class="maglock" rx="3"/>
+    <text x="70" y="77" class="label" fill="#ef4444">MAGNETIC LOCK</text>
+    <line x1="165" y1="73" x2="215" y2="73" class="arrow"/>
+
+    <!-- REX Sensor (Mounted central header above door) -->
+    <rect x="330" y="10" width="60" height="25" class="sensor-box" rx="4"/>
+    <circle cx="360" cy="22" r="5" fill="#38bdf8"/>
+    
+    <text x="560" y="25" class="label" fill="#38bdf8">PIR REX SENSOR</text>
+    <text x="560" y="42" class="desc">Monitors interior exit approach</text>
+    <line x1="550" y1="22" x2="395" y2="22" class="arrow"/>
+
+    <!-- Detection Cone (Spreading downwards toward floor and seam) -->
+    <polygon points="360,35 160,280 560,280" class="detection-cone"/>
+    <text x="560" y="180" class="label" fill="#38bdf8">DETECTION CONE</text>
+    <text x="560" y="198" class="desc">Triggers maglock release</text>
+
+    <!-- Meeting Seam / Door Leaf -->
+    <rect x="350" y="60" width="20" height="220" class="door-leaf" rx="2"/>
+    <line x1="360" y1="60" x2="360" y2="280" stroke="#f59e0b" stroke-width="2" stroke-dasharray="2 4"/>
+
+    <!-- Thermal Injection Path (Refrigerant mist through door gap) -->
+    <path d="M 370 120 C 370 100 390 90 410 110 C 430 130 380 160 365 140" class="thermal-spray"/>
+    
+    <line x1="120" y1="130" x2="350" y2="130" class="arrow"/>
+    <text x="110" y="125" class="label" text-anchor="end" fill="#c084fc">THERMAL SPRAY INJECTION</text>
+    <text x="110" y="142" class="desc" text-anchor="end">Canned air sprayed through seam</text>
+    <text x="110" y="159" class="desc" text-anchor="end">Sudden temp delta triggers PIR</text>
+  </g>
+</svg>

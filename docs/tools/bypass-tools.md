@@ -11,6 +11,13 @@ Specialized bypass tools are engineered to interact with latches, handles, elect
 
 ---
 
+## Tool Geometry & Functional Points
+
+![Specialized Bypass Tool Profiles and Mechanisms](/img/wiki/tools/bypass-tools-lineup.svg)
+*Figure 1: Bypass tool geometries including Under-Door Tool (UDT), Shove Knife, Padlock Shims, and Traveler Hook. Source & Reference: [Physical Security Bypasses (Deviant Ollam) & Red Team Hardware Manuals](/docs/resources/references).*
+
+---
+
 ## Core Equipment Profiles
 
 | Tool Name | Target Hardware | Mechanism |

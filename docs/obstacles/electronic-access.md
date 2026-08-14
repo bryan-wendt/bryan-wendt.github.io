@@ -11,6 +11,18 @@ Electronic access control (EAC) systems integrate electrified locking hardware, 
 
 ---
 
+## Request to Exit (REX) Sensor Attacks
+
+![Request to Exit Sensor Detection Cone and Bypass Vector](/img/wiki/obstacles/rex-sensor-cone.svg)
+*Figure 1: Passive Infrared (PIR) detection cone above door header and thermal spray injection vector through meeting seam. Source & Reference: [Babak Javadi & Deviant Ollam Conference Presentations (DEF CON / HOPE)](/docs/resources/references).*
+
+Most electronic access doors utilize passive infrared (PIR) Request to Exit (REX) sensors mounted above the interior door frame to automatically release magnetic locks when someone approaches to exit.
+
+- **Thermal Spray / Canned Air:** Inverting a compressed air canister sprays sub-zero refrigerant vapor through the door gap. The extreme temperature delta triggers the PIR sensor, unlocking the door instantly.
+- **Physical Targets (Warmth/Motion):** Sliding an object (paper sheet, inflatable balloon, heated wire) through the meeting gap or transom into the sensor's field of view.
+
+---
+
 ## Hardware Classifications
 
 | Hardware Type | Operational Mode | Attack Vectors |
@@ -18,15 +30,6 @@ Electronic access control (EAC) systems integrate electrified locking hardware, 
 | **Magnetic Locks (Maglocks)** | Fail-Safe (Power cut releases lock) | REX sensor triggering, power interruption, magnetic armature interference |
 | **Electric Strikes** | Fail-Secure (Power needed to unlock) or Fail-Safe | Mechanical latch slipping, auxiliary pin exploitation |
 | **Electrified Mortise Locks** | Integrated solenoid in lock case | REX sensor triggering, mechanical picking of key override |
-
----
-
-## Request to Exit (REX) Sensor Attacks
-
-Most electronic access doors utilize passive infrared (PIR) Request to Exit (REX) sensors mounted above the interior door frame to automatically release magnetic locks when someone approaches to exit.
-
-- **Thermal Spray / Canned Air:** Inverting a compressed air canister sprays sub-zero refrigerant vapor through the door gap. The extreme temperature delta triggers the PIR sensor, unlocking the door instantly.
-- **Physical Targets (Warmth/Motion):** Sliding an object (paper sheet, inflatable balloon, heated wire) through the meeting gap or transom into the sensor's field of view.
 
 ---
 

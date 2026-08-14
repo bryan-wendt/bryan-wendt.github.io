@@ -11,20 +11,23 @@ Tubular locks (also known as ace locks or radial pin tumbler locks) arrange thei
 
 ---
 
+## Operating Mechanics
+
+![Tubular Lock Mechanism and Axial Shear Plane](/img/wiki/mechanisms/tubular-mechanism.svg)
+*Figure 1: Front face circular pin arrangement and side cutaway showing axial pin movement across the vertical shear plane. Source & Reference: [Chicago Lock Company Engineering Reference & TOOOL Documentation](/docs/resources/references).*
+
+- Pin stacks travel parallel to the keyway axis (longitudinally) rather than perpendicular to the key blade.
+- The key consists of a hollow cylinder with notched cuts along its outer rim.
+- A rectangular alignment notch on the outer rim ensures proper rotational orientation over the central guide pin.
+
+---
+
 ## Common Applications
 
 - Vending machines, laundry machines, and coin-operated equipment.
 - Elevators, key-operated alarm switches, and emergency controls.
 - Bicycle U-locks, motorcycle disk locks, and lock boxes.
 - Computer chassis and physical cable locks (Kensington-style).
-
----
-
-## Operating Mechanics
-
-- Pin stacks travel parallel to the keyway axis (longitudinally) rather than perpendicular to the key blade.
-- The key consists of a hollow cylinder with notched cuts along its outer rim.
-- A rectangular alignment notch on the outer rim ensures proper rotational orientation over the central guide pin.
 
 ---
 
