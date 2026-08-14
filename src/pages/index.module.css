@@ -324,15 +324,19 @@
 .pillarListItem {
   display: flex;
   align-items: flex-start;
-  gap: 0.6rem;
+  gap: 0.75rem;
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--ifm-color-content);
 }
 
-.itemIcon {
+.itemBullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  margin-top: 8px;
   flex-shrink: 0;
-  font-size: 1.1rem;
 }
 
 .pillarFooter {
@@ -436,8 +440,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.6rem 0.8rem;
+  gap: 0.6rem;
+  padding: 0.65rem 0.85rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--bw-card-border);
@@ -457,6 +461,10 @@
   border-color: var(--ifm-color-primary-light);
   color: var(--ifm-color-primary) !important;
   transform: translateY(-1px);
+}
+
+.socialBtn svg {
+  flex-shrink: 0;
 }
 
 /* Quick Jump Topics Grid */
@@ -492,8 +500,27 @@
 }
 
 .quickIcon {
-  font-size: 1.8rem;
-  margin-bottom: 0.75rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 165, 233, 0.08);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  color: var(--ifm-color-primary-light);
+  margin-bottom: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+[data-theme='light'] .quickIcon {
+  color: #0284c7;
+}
+
+.quickCard:hover .quickIcon {
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+  border-color: var(--ifm-color-primary);
 }
 
 .quickTitle {

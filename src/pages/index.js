@@ -5,6 +5,20 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import {
+  GitHubIcon,
+  XIcon,
+  DiscordIcon,
+  LinkedInIcon,
+  ShieldIcon,
+  BookOpenIcon,
+  DoorIcon,
+  ToolIcon,
+  KeyIcon,
+  FileTextIcon,
+  ArrowRightIcon,
+  ArrowUpRightIcon,
+} from '@site/src/components/Icons';
 
 function HeroHeader() {
   return (
@@ -12,7 +26,7 @@ function HeroHeader() {
       <div className={styles.heroAura} />
       <div className={styles.heroContent}>
         <div className={styles.badgePill}>
-          <span>🔒 Physical Security • Red Teaming • Research</span>
+          <span>Physical Security • Red Teaming • Research</span>
         </div>
         
         <Heading as="h1" className={styles.heroTitle}>
@@ -34,7 +48,7 @@ function HeroHeader() {
             className={styles.primaryBtn}
             to="/docs/intro">
             <span>Explore Physical Wiki</span>
-            <span aria-hidden="true">→</span>
+            <ArrowRightIcon size={16} />
           </Link>
           <Link
             className={styles.secondaryBtn}
@@ -44,16 +58,17 @@ function HeroHeader() {
           <Link
             className={styles.secondaryBtn}
             href="https://github.com/bryan-wendt">
-            <span>GitHub Profile ↗</span>
+            <span>GitHub Profile</span>
+            <ArrowUpRightIcon size={15} />
           </Link>
         </div>
 
         <div className={styles.tagsRow}>
-          <span className={styles.tagPill}>🗝️ Lock Picking & Bypass</span>
-          <span className={styles.tagPill}>🚪 Obstacles & Barriers</span>
-          <span className={styles.tagPill}>📜 Certification Reviews</span>
-          <span className={styles.tagPill}>🐧 Linux & Tooling</span>
-          <span className={styles.tagPill}>⚡ Always Learning</span>
+          <span className={styles.tagPill}>Lock Picking & Bypass</span>
+          <span className={styles.tagPill}>Obstacles & Barriers</span>
+          <span className={styles.tagPill}>Certification Reviews</span>
+          <span className={styles.tagPill}>Linux & Tooling</span>
+          <span className={styles.tagPill}>Always Learning</span>
         </div>
       </div>
     </header>
@@ -79,7 +94,7 @@ function PillarsSection() {
           <div>
             <div className={styles.pillarHeader}>
               <div className={styles.pillarIconBox}>
-                <span>🛡️</span>
+                <ShieldIcon size={24} />
               </div>
               <span className={styles.pillarBadge}>Open Wiki</span>
             </div>
@@ -94,15 +109,15 @@ function PillarsSection() {
 
             <ul className={styles.pillarList}>
               <li className={styles.pillarListItem}>
-                <span className={styles.itemIcon}>🔓</span>
+                <span className={styles.itemBullet} />
                 <span><strong>Bypass Techniques:</strong> Latch slips, under-door tools, REX sensor triggers, and shimming methods.</span>
               </li>
               <li className={styles.pillarListItem}>
-                <span className={styles.itemIcon}>🚧</span>
+                <span className={styles.itemBullet} />
                 <span><strong>Obstacles & Barriers:</strong> Turnstiles, fences, crash bars, electronic strikes, and perimeter controls.</span>
               </li>
               <li className={styles.pillarListItem}>
-                <span className={styles.itemIcon}>🧰</span>
+                <span className={styles.itemBullet} />
                 <span><strong>Tools & Equipment:</strong> Lock picks, bypass keys, decoders, and field-tested bypass gear.</span>
               </li>
             </ul>
@@ -111,7 +126,7 @@ function PillarsSection() {
           <div className={styles.pillarFooter}>
             <Link to="/docs/intro" className={styles.cardCta}>
               <span>Enter Physical Red Team Wiki</span>
-              <span aria-hidden="true">→</span>
+              <ArrowRightIcon size={16} />
             </Link>
           </div>
         </div>
@@ -121,7 +136,7 @@ function PillarsSection() {
           <div>
             <div className={styles.pillarHeader}>
               <div className={styles.pillarIconBox}>
-                <span>✍️</span>
+                <BookOpenIcon size={24} />
               </div>
               <span className={styles.pillarBadge}>Articles & Labs</span>
             </div>
@@ -136,15 +151,15 @@ function PillarsSection() {
 
             <ul className={styles.pillarList}>
               <li className={styles.pillarListItem}>
-                <span className={styles.itemIcon}>🎓</span>
+                <span className={styles.itemBullet} />
                 <span><strong>Certifications:</strong> Honest reviews and prep notes for eJPT, Practical Ethical Hacking (PEH), and more.</span>
               </li>
               <li className={styles.pillarListItem}>
-                <span className={styles.itemIcon}>🚩</span>
+                <span className={styles.itemBullet} />
                 <span><strong>CTFs & Walkthroughs:</strong> Detailed breakdowns of TryHackMe machines (Pickle Rick, Alfred, Steel Mountain, etc.).</span>
               </li>
               <li className={styles.pillarListItem}>
-                <span className={styles.itemIcon}>💡</span>
+                <span className={styles.itemBullet} />
                 <span><strong>Personal Projects:</strong> Tool evaluations, note-taking strategies, and security workflows.</span>
               </li>
             </ul>
@@ -153,7 +168,7 @@ function PillarsSection() {
           <div className={styles.pillarFooter}>
             <Link to="/blog" className={styles.cardCta}>
               <span>Browse All Blog Posts</span>
-              <span aria-hidden="true">→</span>
+              <ArrowRightIcon size={16} />
             </Link>
           </div>
         </div>
@@ -193,17 +208,21 @@ function AboutSection() {
             </div>
 
             <div className={styles.socialGrid}>
-              <Link href="https://github.com/bryan-wendt" className={styles.socialBtn}>
-                <span>💻 GitHub</span>
+              <Link href="https://github.com/bryan-wendt" className={styles.socialBtn} aria-label="GitHub Profile">
+                <GitHubIcon size={18} />
+                <span>GitHub</span>
               </Link>
-              <Link href="https://x.com/bryan_wendt" className={styles.socialBtn}>
-                <span>🐦 X / Twitter</span>
+              <Link href="https://x.com/bryan_wendt" className={styles.socialBtn} aria-label="X Profile">
+                <XIcon size={16} />
+                <span>X</span>
               </Link>
-              <Link href="https://discord.com/users/bw#6573" className={styles.socialBtn}>
-                <span>💬 Discord</span>
+              <Link href="https://discord.com/users/bw#6573" className={styles.socialBtn} aria-label="Discord">
+                <DiscordIcon size={18} />
+                <span>Discord</span>
               </Link>
-              <Link href="https://linkedin.com/in/bryan-wendt" className={styles.socialBtn}>
-                <span>🔗 LinkedIn</span>
+              <Link href="https://linkedin.com/in/bryan-wendt" className={styles.socialBtn} aria-label="LinkedIn Profile">
+                <LinkedInIcon size={18} />
+                <span>LinkedIn</span>
               </Link>
             </div>
           </div>
@@ -216,25 +235,25 @@ function AboutSection() {
 function QuickTopicsSection() {
   const topics = [
     {
-      icon: '🚪',
+      icon: <DoorIcon size={22} />,
       title: 'Obstacles & Defenses',
       desc: 'Analyze perimeter barriers, turnstiles, crash bars, and door hardware.',
       to: '/docs/category/obstacles',
     },
     {
-      icon: '🧰',
+      icon: <ToolIcon size={22} />,
       title: 'Tools & Equipment',
       desc: 'Guides on picks, tension tools, bump keys, and bypass devices.',
       to: '/docs/category/tools',
     },
     {
-      icon: '🔓',
+      icon: <KeyIcon size={22} />,
       title: 'Bypass Techniques',
       desc: 'Methodologies for shimming, latch manipulation, and sensor evasion.',
       to: '/docs/category/techniques',
     },
     {
-      icon: '📝',
+      icon: <FileTextIcon size={22} />,
       title: 'Recent Writeups',
       desc: 'Read the latest blog articles, certifications, and project updates.',
       to: '/blog',
@@ -253,7 +272,7 @@ function QuickTopicsSection() {
       <div className={styles.quickGrid}>
         {topics.map((topic, idx) => (
           <Link key={idx} to={topic.to} className={styles.quickCard}>
-            <span className={styles.quickIcon}>{topic.icon}</span>
+            <div className={styles.quickIcon}>{topic.icon}</div>
             <div className={styles.quickTitle}>{topic.title}</div>
             <p className={styles.quickDesc}>{topic.desc}</p>
           </Link>
