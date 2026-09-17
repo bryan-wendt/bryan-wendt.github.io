@@ -20,11 +20,12 @@ Physical security knowledge is often decentralized—scattered across individual
 
 The goal of this wiki is to consolidate practical, structured research into an easily navigable reference covering:
 
-- **Field Identification:** How to recognize cylinders, keyways, and hardware in the field.
-- **Lock Mechanisms:** Internal pin, wafer, tubular, and electronic mechanisms.
-- **Obstacles & Defenses:** Perimeter barriers, doors, frames, and electronic access controls.
-- **Bypass Techniques:** Practical bypass vectors, manipulation, and sensor triggers.
-- **Tool Profiles:** Specs and applications for picks, tensioners, and bypass gear.
+- **Field Identification:** Recognizing cylinders, multiplex keyways, credentials, exterior laser markings, and hardware in the field.
+- **Lock Mechanisms:** Pin tumbler, wafer, tubular, Small & Large Format Interchangeable Cores (SFIC/LFIC), mechanical safe locks, and contactless RFID systems.
+- **Obstacles & Defenses:** Perimeter barriers, door assemblies, egress hardware, commercial burglary safes (UL 687), GSA security containers, and electronic access controls.
+- **Bypass Techniques:** Single pin picking, optical key reading, master key mathematical reconstruction, mechanical safe manipulation, keypad brute-forcing, and RFID exploits.
+- **Tools & Equipment:** Picks, tensioners, code origination machines (HPC Blitz), electronic diagnostic gear (Proxmark3, ESPkey), and standardized elevator service keys.
+- **Standards & Field Ops:** Pinning specifications, ASIS/IES defense-in-depth standards, TSA travel regulations, and operational Letters of Authorization (LoA).
 
 ---
 
@@ -34,12 +35,12 @@ Quickly explore the main categories of the wiki:
 
 | Section | Description | Quick Link |
 | :--- | :--- | :--- |
-| **Identification** | Field identification workflows, cylinder housings, and keyway profiles. | [Explore Identification](/docs/category/identification) |
-| **Mechanisms** | Pin tumbler, wafer, tubular, and electronic locking systems. | [Explore Mechanisms](/docs/category/mechanisms) |
-| **Obstacles & Defenses** | Doors, frames, crash bars, electronic strikes, and magnetic locks. | [Explore Obstacles](/docs/category/obstacles) |
-| **Bypass Techniques** | Single pin picking, raking, latch slipping, UDT, and REX evasion. | [Explore Techniques](/docs/category/techniques) |
-| **Tools & Equipment** | Lock picks, tension tools, bypass knives, and specialty equipment. | [Explore Tools](/docs/category/tools) |
-| **Resources & Glossary** | Terminology definitions, standards, books, and conference presentations. | [Explore Resources](/docs/category/resources) |
+| **Identification** | Field workflows, cylinder formats, multiplex keyways, and RFID credential laser markings. | [Explore Identification](/docs/category/identification) |
+| **Mechanisms** | Pin tumbler, wafer, tubular, SFIC/LFIC dual shear lines, safe wheel packs, and RFID/1-Wire. | [Explore Mechanisms](/docs/category/mechanisms) |
+| **Obstacles & Defenses** | Doors, egress devices, commercial safes (UL 687), GSA security containers, and electronic access. | [Explore Obstacles](/docs/category/obstacles) |
+| **Techniques** | Lock picking, key decoding math, safe manipulation graphing, pushbutton brute-forcing, and RFID attacks. | [Explore Techniques](/docs/category/techniques) |
+| **Tools & Equipment** | Picks, bypass gear, HPC code machines, Proxmark3, ESPkey, and ubiquitous elevator service keys. | [Explore Tools](/docs/category/tools) |
+| **Resources & Standards** | Pinning matrices, ASIS/IES standards, TSA travel regulations, glossary, and engineering archives. | [Explore Resources](/docs/category/resources) |
 
 ---
 

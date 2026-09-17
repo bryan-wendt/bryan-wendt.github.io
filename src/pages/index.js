@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -12,163 +11,173 @@ import {
   LinkedInIcon,
   ShieldIcon,
   BookOpenIcon,
-  DoorIcon,
-  ToolIcon,
-  KeyIcon,
-  FileTextIcon,
   ArrowRightIcon,
   ArrowUpRightIcon,
 } from '@site/src/components/Icons';
 
-function HeroHeader() {
+function HeroSection() {
   return (
-    <header className={styles.heroWrapper}>
-      <div className={styles.heroAura} />
+    <section className={styles.heroSection}>
       <div className={styles.heroContent}>
-        <div className={styles.badgePill}>
-          <span>Physical Security • Red Teaming • Research</span>
-        </div>
-        
         <Heading as="h1" className={styles.heroTitle}>
           Bryan Wendt
         </Heading>
-        
-        <div className={styles.heroRole}>
-          Security Professional & Physical Red Teamer
+        <div className={styles.heroTagline}>
+          Physical Security &bull; Red Teaming &bull; Technical Research
         </div>
-        
-        <p className={styles.heroSubtitle}>
-          Welcome to my personal site and knowledge base. Here I document deep dives into 
-          physical security mechanisms, bypass methodologies, hardware tooling, cybersecurity 
-          certifications, and hands-on walkthroughs.
+        <p className={styles.heroBio}>
+          Welcome to my personal site and technical knowledge base. This platform is organized into
+          two core areas: the <strong>Physical Red Team Wiki (PRTW)</strong>, an open, structured
+          encyclopedia covering covert methods of entry and hardware security; and the{' '}
+          <strong>Security &amp; Tech Blog</strong>, documenting hands-on certification reviews,
+          CTF machine walkthroughs, and personal engineering projects.
         </p>
 
-        <div className={styles.heroButtons}>
+        <div className={styles.socialRow}>
           <Link
-            className={styles.primaryBtn}
-            to="/docs/intro">
-            <span>Explore Physical Wiki</span>
-            <ArrowRightIcon size={16} />
+            href="https://github.com/bryan-wendt"
+            className={styles.socialLink}
+            aria-label="GitHub">
+            <GitHubIcon size={16} />
+            <span>GitHub</span>
           </Link>
           <Link
-            className={styles.secondaryBtn}
-            to="/blog">
-            <span>Read Blog & Writeups</span>
+            href="https://linkedin.com/in/bryan-wendt"
+            className={styles.socialLink}
+            aria-label="LinkedIn">
+            <LinkedInIcon size={16} />
+            <span>LinkedIn</span>
           </Link>
           <Link
-            className={styles.secondaryBtn}
-            href="https://github.com/bryan-wendt">
-            <span>GitHub Profile</span>
-            <ArrowUpRightIcon size={15} />
+            href="https://discord.com/users/bw#6573"
+            className={styles.socialLink}
+            aria-label="Discord">
+            <DiscordIcon size={16} />
+            <span>Discord</span>
           </Link>
-        </div>
+          <Link
+            href="https://x.com/bryan_wendt"
+            className={styles.socialLink}
+            aria-label="X">
+            <XIcon size={14} />
+            <span>X</span>
+          </Link>
+          <a
+            href="/blog/rss.xml"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialLink}
+            aria-label="RSS Feed">
+            <span className={styles.rssDot} />
+            <span>RSS</span>
+          </a>
 
-        <div className={styles.tagsRow}>
-          <span className={styles.tagPill}>Lock Picking & Bypass</span>
-          <span className={styles.tagPill}>Obstacles & Barriers</span>
-          <span className={styles.tagPill}>Certification Reviews</span>
-          <span className={styles.tagPill}>Linux & Tooling</span>
-          <span className={styles.tagPill}>Always Learning</span>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
 function PillarsSection() {
   return (
     <section className={styles.pillarsSection}>
-      <div className={styles.sectionHeader}>
-        <span className={styles.sectionTag}>Core Knowledge Bases</span>
-        <Heading as="h2" className={styles.sectionTitle}>
-          Explore the Work
-        </Heading>
-        <p className={styles.sectionSubtitle}>
-          Dedicated resources built to organize practical physical security knowledge and technical security writeups.
-        </p>
-      </div>
-
       <div className={styles.pillarsGrid}>
         {/* Pillar 1: Physical Red Team Wiki */}
         <div className={styles.pillarCard}>
-          <div>
-            <div className={styles.pillarHeader}>
-              <div className={styles.pillarIconBox}>
-                <ShieldIcon size={24} />
-              </div>
-              <span className={styles.pillarBadge}>Open Wiki</span>
+          <div className={styles.pillarHeader}>
+            <div className={styles.pillarIcon}>
+              <ShieldIcon size={20} />
             </div>
-
-            <Heading as="h3" className={styles.pillarTitle}>
-              Physical Red Team Wiki
-            </Heading>
-            <p className={styles.pillarDesc}>
-              A centralized repository for physical security topics. Covers locks, bypass techniques, 
-              hardware tools, electronic access systems, and real-world engagement obstacles.
-            </p>
-
-            <ul className={styles.pillarList}>
-              <li className={styles.pillarListItem}>
-                <span className={styles.itemBullet} />
-                <span><strong>Identification & Recon:</strong> Recognizing cylinders, keyways, and hardware profiles.</span>
-              </li>
-              <li className={styles.pillarListItem}>
-                <span className={styles.itemBullet} />
-                <span><strong>Bypass Techniques:</strong> Latch slips, under-door tools, REX sensor triggers, and shimming methods.</span>
-              </li>
-              <li className={styles.pillarListItem}>
-                <span className={styles.itemBullet} />
-                <span><strong>Obstacles & Hardware:</strong> Turnstiles, fences, crash bars, magnetic locks, and strikes.</span>
-              </li>
-            </ul>
+            <div>
+              <span className={styles.pillarCategory}>Knowledge Base</span>
+              <Heading as="h2" className={styles.pillarTitle}>
+                Physical Red Team Wiki
+              </Heading>
+            </div>
           </div>
 
-          <div className={styles.pillarFooter}>
-            <Link to="/docs/intro" className={styles.cardCta}>
+          <p className={styles.pillarDescription}>
+            A centralized reference for physical security assessments, covert methods of
+            entry (CMOE), lock identification, and bypass mechanics.
+          </p>
+
+          <div className={styles.directoryList}>
+            <Link to="/docs/category/identification" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Identification</span>
+              <span className={styles.directoryMeta}>Keyways, blanks, RFID badges &amp; readers</span>
+            </Link>
+            <Link to="/docs/category/mechanisms" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Mechanisms</span>
+              <span className={styles.directoryMeta}>Pin tumbler, wafer, SFIC/LFIC, safe dials</span>
+            </Link>
+            <Link to="/docs/category/obstacles" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Obstacles &amp; Defenses</span>
+              <span className={styles.directoryMeta}>Doors, egress bars, electronic strikes, vaults</span>
+            </Link>
+            <Link to="/docs/category/techniques" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Techniques &amp; Exploits</span>
+              <span className={styles.directoryMeta}>Picking, bypass tools, key decoding, manipulation</span>
+            </Link>
+            <Link to="/docs/category/tools" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Tools &amp; Equipment</span>
+              <span className={styles.directoryMeta}>Picks, Blitz machines, Proxmark3, service keys</span>
+            </Link>
+            <Link to="/docs/category/resources" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Standards &amp; Field Ops</span>
+              <span className={styles.directoryMeta}>Pinning matrix, ASIS, IES lighting, travel rules</span>
+            </Link>
+          </div>
+
+          <div className={styles.pillarAction}>
+            <Link to="/docs/intro" className={styles.pillarBtn}>
               <span>Enter Physical Red Team Wiki</span>
-              <ArrowRightIcon size={16} />
+              <ArrowRightIcon size={15} />
             </Link>
           </div>
         </div>
 
-        {/* Pillar 2: Technical Blog */}
+        {/* Pillar 2: Security & Tech Blog */}
         <div className={styles.pillarCard}>
-          <div>
-            <div className={styles.pillarHeader}>
-              <div className={styles.pillarIconBox}>
-                <BookOpenIcon size={24} />
-              </div>
-              <span className={styles.pillarBadge}>Articles & Labs</span>
+          <div className={styles.pillarHeader}>
+            <div className={styles.pillarIcon}>
+              <BookOpenIcon size={20} />
             </div>
-
-            <Heading as="h3" className={styles.pillarTitle}>
-              Security & Tech Blog
-            </Heading>
-            <p className={styles.pillarDesc}>
-              In-depth articles detailing cybersecurity certifications, hands-on CTF walkthroughs, 
-              custom scripts, tool breakdowns, and reflections from continuous learning.
-            </p>
-
-            <ul className={styles.pillarList}>
-              <li className={styles.pillarListItem}>
-                <span className={styles.itemBullet} />
-                <span><strong>Certifications:</strong> Honest reviews and prep notes for eJPT, Practical Ethical Hacking (PEH), and more.</span>
-              </li>
-              <li className={styles.pillarListItem}>
-                <span className={styles.itemBullet} />
-                <span><strong>CTFs & Walkthroughs:</strong> Detailed breakdowns of TryHackMe machines (Pickle Rick, Alfred, Steel Mountain, etc.).</span>
-              </li>
-              <li className={styles.pillarListItem}>
-                <span className={styles.itemBullet} />
-                <span><strong>Personal Projects:</strong> Tool evaluations, note-taking strategies, and security workflows.</span>
-              </li>
-            </ul>
+            <div>
+              <span className={styles.pillarCategory}>Articles &amp; Labs</span>
+              <Heading as="h2" className={styles.pillarTitle}>
+                Security &amp; Tech Blog
+              </Heading>
+            </div>
           </div>
 
-          <div className={styles.pillarFooter}>
-            <Link to="/blog" className={styles.cardCta}>
+          <p className={styles.pillarDescription}>
+            Personal writeups detailing cybersecurity certification retrospectives, hands-on
+            vulnerable machine solutions, and practical engineering workflows.
+          </p>
+
+          <div className={styles.directoryList}>
+            <Link to="/blog/tags/certification" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Certification Reviews</span>
+              <span className={styles.directoryMeta}>eJPT, Practical Ethical Hacking (PEH), prep notes</span>
+            </Link>
+            <Link to="/blog/tags/walkthrough" className={styles.directoryItem}>
+              <span className={styles.directoryName}>CTF Machine Walkthroughs</span>
+              <span className={styles.directoryMeta}>TryHackMe boxes (Pickle Rick, Steel Mountain, Alfred)</span>
+            </Link>
+            <Link to="/blog/tags/notes" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Workflows &amp; Methodologies</span>
+              <span className={styles.directoryMeta}>Linux setups, note-taking strategies, and lab tooling</span>
+            </Link>
+            <Link to="/blog/tags/personal" className={styles.directoryItem}>
+              <span className={styles.directoryName}>Personal Updates</span>
+              <span className={styles.directoryMeta}>Site redesigns, project logs, and continuous learning</span>
+            </Link>
+          </div>
+
+          <div className={styles.pillarAction}>
+            <Link to="/blog" className={styles.pillarBtn}>
               <span>Browse All Blog Posts</span>
-              <ArrowRightIcon size={16} />
+              <ArrowRightIcon size={15} />
             </Link>
           </div>
         </div>
@@ -177,104 +186,69 @@ function PillarsSection() {
   );
 }
 
-function AboutSection() {
-  return (
-    <section className={styles.aboutSection}>
-      <div className={styles.aboutContainer}>
-        <div className={styles.aboutGrid}>
-          <div className={styles.aboutBio}>
-            <Heading as="h2">About Bryan Wendt (BW)</Heading>
-            <p className={styles.aboutText}>
-              I am a security professional with a specialized passion for physical security, 
-              penetration testing, and understanding how physical mechanisms can be manipulated and bypassed.
-            </p>
-            <p className={styles.aboutText}>
-              Physical security knowledge is often scattered across obscure blog posts, conference 
-              recordings, and specialized forums. I created this platform to consolidate structured, 
-              practical research in one location while sharing my ongoing learning journey.
-            </p>
-          </div>
-
-          <div className={styles.aboutCard}>
-            <div className={styles.aboutCardTitle}>Core Focus & Connect</div>
-            
-            <div className={styles.skillsList}>
-              <span className={styles.skillBadge}>Physical Pen Testing</span>
-              <span className={styles.skillBadge}>Lock Mechanisms</span>
-              <span className={styles.skillBadge}>Bypass Tooling</span>
-              <span className={styles.skillBadge}>Access Control</span>
-              <span className={styles.skillBadge}>CTF Walkthroughs</span>
-              <span className={styles.skillBadge}>Documentation</span>
-            </div>
-
-            <div className={styles.socialGrid}>
-              <Link href="https://github.com/bryan-wendt" className={styles.socialBtn} aria-label="GitHub Profile">
-                <GitHubIcon size={18} />
-                <span>GitHub</span>
-              </Link>
-              <Link href="https://x.com/bryan_wendt" className={styles.socialBtn} aria-label="X Profile">
-                <XIcon size={16} />
-                <span>X</span>
-              </Link>
-              <Link href="https://discord.com/users/bw#6573" className={styles.socialBtn} aria-label="Discord">
-                <DiscordIcon size={18} />
-                <span>Discord</span>
-              </Link>
-              <Link href="https://linkedin.com/in/bryan-wendt" className={styles.socialBtn} aria-label="LinkedIn Profile">
-                <LinkedInIcon size={18} />
-                <span>LinkedIn</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function QuickTopicsSection() {
-  const topics = [
+function RecentArticlesSection() {
+  const articles = [
     {
-      icon: <KeyIcon size={22} />,
-      title: 'Field Identification',
-      desc: 'Workflows to identify cylinder housings, keyways, and mechanisms.',
-      to: '/docs/category/identification',
+      date: '2024-09-05',
+      title: 'New Blog Site!',
+      slug: '/blog/new-blog-site',
+      category: 'Updates',
     },
     {
-      icon: <DoorIcon size={22} />,
-      title: 'Obstacles & Defenses',
-      desc: 'Analyze perimeter barriers, turnstiles, crash bars, and door hardware.',
-      to: '/docs/category/obstacles',
+      date: '2020-12-18',
+      title: 'TryHackMe - Linux Strength Training - Walkthrough',
+      slug: '/blog/linux-strength-training-walkthrough',
+      category: 'CTF Walkthrough',
     },
     {
-      icon: <ToolIcon size={22} />,
-      title: 'Tools & Equipment',
-      desc: 'Guides on picks, tension tools, bump keys, and bypass devices.',
-      to: '/docs/category/tools',
+      date: '2020-11-18',
+      title: 'eLearnSecurity Junior Penetration Tester (eJPT) Review',
+      slug: '/blog/ejpt-blog',
+      category: 'Certification',
     },
     {
-      icon: <FileTextIcon size={22} />,
-      title: 'Bypass Techniques',
-      desc: 'Methodologies for shimming, latch manipulation, and sensor evasion.',
-      to: '/docs/category/techniques',
+      date: '2020-11-18',
+      title: 'Practical Ethical Hacking (PEH) Course Review',
+      slug: '/blog/peh-blog',
+      category: 'Course Review',
+    },
+    {
+      date: '2020-11-19',
+      title: 'My Note-Taking Journey & Security Documentation',
+      slug: '/blog/notetaking-blog',
+      category: 'Workflow',
+    },
+    {
+      date: '2020-11-25',
+      title: 'TryHackMe - Pickle Rick - Walkthrough',
+      slug: '/blog/picklerick-walkthrough',
+      category: 'CTF Walkthrough',
     },
   ];
 
   return (
-    <section className={styles.quickSection}>
-      <div className={styles.sectionHeader}>
-        <span className={styles.sectionTag}>Wiki Categories</span>
-        <Heading as="h2" className={styles.sectionTitle}>
-          Jump Right In
-        </Heading>
+    <section className={styles.articlesSection}>
+      <div className={styles.sectionHeadingRow}>
+        <div>
+          <Heading as="h2" className={styles.sectionTitle}>
+            Selected &amp; Recent Writing
+          </Heading>
+          <p className={styles.sectionSubtitle}>
+            Highlights from the blog spanning certification prep, CTF walkthroughs, and notes.
+          </p>
+        </div>
+        <Link to="/blog" className={styles.viewAllLink}>
+          <span>View Archive</span>
+          <ArrowRightIcon size={14} />
+        </Link>
       </div>
 
-      <div className={styles.quickGrid}>
-        {topics.map((topic, idx) => (
-          <Link key={idx} to={topic.to} className={styles.quickCard}>
-            <div className={styles.quickIcon}>{topic.icon}</div>
-            <div className={styles.quickTitle}>{topic.title}</div>
-            <p className={styles.quickDesc}>{topic.desc}</p>
+      <div className={styles.articlesList}>
+        {articles.map((item, idx) => (
+          <Link key={idx} to={item.slug} className={styles.articleRow}>
+            <span className={styles.articleDate}>{item.date}</span>
+            <span className={styles.articleTitle}>{item.title}</span>
+            <span className={styles.articleCategory}>{item.category}</span>
           </Link>
         ))}
       </div>
@@ -282,26 +256,33 @@ function QuickTopicsSection() {
   );
 }
 
-function DisclaimerSection() {
+function AboutAndLegalSection() {
   return (
-    <section className={styles.disclaimerSection}>
-      <div className={styles.disclaimerCard}>
-        <div className={styles.disclaimerHeader}>
-          <span className={styles.disclaimerBadge}>Legal Notice</span>
-          <Heading as="h3" className={styles.disclaimerTitle}>
-            Disclaimer & Authorized Use Policy
+    <section className={styles.aboutLegalSection}>
+      <div className={styles.aboutLegalGrid}>
+        <div className={styles.aboutBlock}>
+          <Heading as="h3" className={styles.aboutLegalTitle}>
+            About This Site
           </Heading>
+          <p className={styles.aboutLegalText}>
+            Physical security and covert entry knowledge is frequently scattered across obscure
+            locksmith journals, technical bulletins, and conference archives. This platform was built
+            to aggregate verifiable physical security engineering data and personal security writeups
+            into a single, structured, easily navigable resource.
+          </p>
         </div>
-        <p className={styles.disclaimerText}>
-          All information, research, and technical material published on this website and wiki are strictly intended 
-          for authorized physical security assessments, academic research, and defensive educational purposes.
-        </p>
-        <p className={styles.disclaimerText}>
-          Attempting to bypass, tamper with, or manipulate locks, security mechanisms, or physical access control systems 
-          without prior, explicit, and written authorization from the verified property or system owner is illegal and 
-          punishable under applicable local, state, and federal laws. The author assumes no responsibility or liability for 
-          any misuse, damage, or unlawful actions conducted with the information provided on this platform.
-        </p>
+
+        <div className={styles.legalBlock}>
+          <Heading as="h3" className={styles.aboutLegalTitle}>
+            Authorized Use Policy
+          </Heading>
+          <p className={styles.aboutLegalText}>
+            All technical documentation and bypass methodologies published here are intended
+            strictly for authorized physical penetration testing, security evaluations, and academic
+            research. Physical manipulation of lock hardware or access control systems without prior
+            explicit written authorization from the property owner is unlawful.
+          </p>
+        </div>
       </div>
     </section>
   );
@@ -311,14 +292,13 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="Bryan Wendt | Physical Red Team Wiki & Security Blog"
-      description="Personal website and Physical Red Team Wiki of Bryan Wendt (BW). Exploring physical security, bypass techniques, certifications, and technical writeups.">
-      <main>
-        <HeroHeader />
+      title="Bryan Wendt | Security Research, Physical Red Team Wiki & Blog"
+      description="Personal website, Technical Blog, and Physical Red Team Wiki of Bryan Wendt. Dedicated to physical security research, lock mechanisms, bypass tools, and certification reviews.">
+      <main className={styles.mainContainer}>
+        <HeroSection />
         <PillarsSection />
-        <AboutSection />
-        <QuickTopicsSection />
-        <DisclaimerSection />
+        <RecentArticlesSection />
+        <AboutAndLegalSection />
       </main>
     </Layout>
   );
